@@ -9,6 +9,6 @@ package ec.edu.yavirac.instituto.comunidad;
  *
  * @author Labs-DECC
  */
-public class JoseRodolfo_ObandoMaldonado {
+public class Jose_Rodolfo_Obando_Maldonado {
     
 }
