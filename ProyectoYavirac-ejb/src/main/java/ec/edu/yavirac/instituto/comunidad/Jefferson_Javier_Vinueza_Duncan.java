@@ -12,4 +12,8 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Jefferson_Javier_Vinueza_Duncan {
     private String nombre="EDGAR FABIAN";
     private String apellido ="ESTRELLA GUAMBUGUETE";
+    
+    private String nombre1="JEFFERSON";
+    private String apellido2 ="JAVIER";
+    
 }
