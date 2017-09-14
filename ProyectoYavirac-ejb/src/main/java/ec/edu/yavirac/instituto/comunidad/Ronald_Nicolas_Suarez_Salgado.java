@@ -13,4 +13,6 @@ public class Ronald_Nicolas_Suarez_Salgado {
     
     String Ronald_Nicolas_Suarez_Salgado;
     
+    String Roger_ELias_Pozo_Sanchez;
+    
 }
