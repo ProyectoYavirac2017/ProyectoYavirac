@@ -11,6 +11,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Juan_Esteban_Rocha_Lascano {
     String Nombre="Juan Esteban Rocha Lascano";
+    String Nombre1="Kenny Andrés Cruz García";
     
     
 }
