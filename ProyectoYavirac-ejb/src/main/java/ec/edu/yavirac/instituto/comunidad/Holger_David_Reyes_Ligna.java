@@ -11,5 +11,6 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Holger_David_Reyes_Ligna {
     
+    public String Holger_David_Reyes_Ligna;
     public String Pablo_Ismael_Rosero_Castillo;
 }
