@@ -14,4 +14,6 @@ public class Bryan_David_Roblero_Benalcazar {
     public String Nombre = "BRYAN_DAVID";
     public String Apellido = "ROBLERO_BENALCAZAR";
     
+    public String NOMBRE="ERICK_ISRAEL";
+    public String APELLIDO="VIRACOCHA_VEGA";
 }
