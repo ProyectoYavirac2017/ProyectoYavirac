@@ -7,7 +7,6 @@ package ec.edu.yavirac.instituto.web.bean;
 
 import ec.edu.yavirac.instituto.controlador.FaseControlador;
 import ec.edu.yavirac.instituto.modelo.Fase;
-import ec.edu.yavirac.instituto.util.HibernateUtil;
 import ec.edu.yavirac.instituto.web.bean.i.Imethods;
 import java.io.Serializable;
 import javax.annotation.PostConstruct;
