@@ -12,5 +12,8 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Franklin_Omar_Ronquillo_Pazmino {
   public String nombre= "Franklin_Omar" ;
   public String apellido= "Ronquillo_Pazmiño";
-    
+  
+ public String NOMBRE="ERICK_ISRAEL";
+    public String APELLIDO="VIRACOCHA_VEGA";
+      
 }
