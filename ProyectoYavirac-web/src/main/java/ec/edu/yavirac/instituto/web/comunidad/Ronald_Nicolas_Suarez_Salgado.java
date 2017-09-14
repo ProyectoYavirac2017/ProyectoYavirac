@@ -15,4 +15,5 @@ public class Ronald_Nicolas_Suarez_Salgado {
     
     private String nombre = "Bryan Mauricio Tinoco Tacuri" ;
     
+     private String Reoger_Elias_Pozo_Sanchez;
 }
