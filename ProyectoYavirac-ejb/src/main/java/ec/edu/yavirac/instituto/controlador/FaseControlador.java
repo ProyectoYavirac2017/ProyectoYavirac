@@ -24,7 +24,7 @@ import javax.inject.Inject;
  */
 @Stateless
 @LocalBean
-public class FaseControlador implements Ifase, Serializable {
+public class FaseControlador implements Serializable {
 
     private static final long serialVersionUID = -3073928298785803508L;
     @Inject
@@ -36,8 +36,7 @@ public class FaseControlador implements Ifase, Serializable {
         util.init();
     }
 
-    @Override
-    public Boolean insert(Fase fase, HibernateUtil util) {
+    public Boolean insert(Fase fase) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
@@ -62,8 +61,8 @@ public class FaseControlador implements Ifase, Serializable {
         return exito;
     }
 
-    @Override
-    public Boolean update(Fase fase, HibernateUtil util) {
+
+    public Boolean update(Fase fase) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
@@ -87,8 +86,8 @@ public class FaseControlador implements Ifase, Serializable {
         return exito;
     }
 
-    @Override
-    public Fase findById(Fase fase, HibernateUtil util) {
+ 
+    public Fase findById(Fase fase) {
         Fase findmFase = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
@@ -112,8 +111,8 @@ public class FaseControlador implements Ifase, Serializable {
         return findmFase;
     }
 
-    @Override
-    public List<Fase> listFases(HibernateUtil util) {
+
+    public List<Fase> listFases() {
         List<Fase> mFases = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
