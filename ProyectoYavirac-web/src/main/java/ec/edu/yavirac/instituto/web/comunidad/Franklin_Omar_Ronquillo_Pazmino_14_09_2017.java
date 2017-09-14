@@ -9,6 +9,8 @@ package ec.edu.yavirac.instituto.web.comunidad;
  *
  * @author FRANKLIN
  */
-public class Franklin_Omar_Ronquillo_Pazmiño_14_09_2017 {
-    
+public class Franklin_Omar_Ronquillo_Pazmino_14_09_2017 {
+  public String nombre = "Franklin_Omar" ;
+  public String apellido= "Ronquillo_Pazmino";
+  
 }
