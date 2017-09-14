@@ -23,8 +23,10 @@ import javax.inject.Inject;
 @LocalBean
 public class EvidenciaControlador implements Serializable{
     private static final long serialVersionUID = -7260505214139170751L;
+    
     @Inject
     private EvidenciaServicio evidenciaServicio; 
+    
     private HibernateUtil util = new HibernateUtil();
     
     
