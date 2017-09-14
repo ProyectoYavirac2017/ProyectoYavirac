@@ -11,4 +11,5 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class julio_fabricio_jaramillo_atahualpa {
     
+    String julio_fabricio_jaramillo_atahualpa;
 }
