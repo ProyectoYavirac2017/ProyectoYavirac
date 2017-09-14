@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Erika_Paola_Ortiz_Gualoto {
-    
+    private String Erika_Paola;
+    private String Ortiz_Gualoto;
 }
