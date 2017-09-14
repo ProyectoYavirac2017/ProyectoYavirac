@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Labs-DECC
  */
 public class Jefferson_Javier_Vinueza_Duncan {
-    
+    private String nombre="EDGAR FABIAN";
+    private String apellido="ESTRELLA GUAMBUGUETE";
 }
