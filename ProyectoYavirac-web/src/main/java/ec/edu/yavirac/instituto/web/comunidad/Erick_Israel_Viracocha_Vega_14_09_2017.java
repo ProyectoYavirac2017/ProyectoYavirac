@@ -13,5 +13,9 @@ public class Erick_Israel_Viracocha_Vega_14_09_2017 {
     public String NOMBRE="ERICK_ISRAEL";
     public String APELLIDO="VIRACOCHA_VEGA";
     
+    public String Marlon__Fernando;
+    public String Lincango__Fichamba;
+    
+    
     
 }
