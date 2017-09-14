@@ -6,7 +6,6 @@
 package ec.edu.yavirac.instituto.controlador;
 
 
-import ec.edu.yavirac.instituto.i.Ievaluacion;
 import ec.edu.yavirac.instituto.modelo.Evaluacion;
 import ec.edu.yavirac.instituto.servicio.EvaluacionServicio;
 import ec.edu.yavirac.instituto.util.HibernateSessionHandler;
@@ -24,7 +23,7 @@ import javax.inject.Inject;
  */
 @Stateless
 @LocalBean
-public class EvaluacionControlador implements Ievaluacion,Serializable {
+public class EvaluacionControlador implements Serializable{
     private static final long serialVersionUID = -7260505214139170751L;
     @Inject
     private EvaluacionServicio evaluacionServicio; 
@@ -34,9 +33,7 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
     public void init() {
         util.init();
     }
-
-    @Override
-    public Boolean insert(Evaluacion evaluacion, HibernateUtil util) {
+    public Boolean insert(Evaluacion evaluacion) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
@@ -60,9 +57,9 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
         return exito;
     }
 
-    @Override
-    public Boolean update(Evaluacion evaluacion, HibernateUtil util) {
-          Boolean exito = false;
+
+    public Boolean update(Evaluacion evaluacion) {
+        Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
@@ -83,12 +80,10 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
             }
         }
         return exito;
-
     }
 
-    @Override
-    public Evaluacion findById(Evaluacion evaluacion, HibernateUtil util) {
-          Evaluacion findmEvaluacion = null;
+    public Evaluacion findById(Evaluacion evaluacion) {
+        Evaluacion findmEvaluacion = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
@@ -111,9 +106,8 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
         return findmEvaluacion;
     }
 
-    @Override
-    public List<Evaluacion> listEvaluaciones(HibernateUtil util) {
-          List<Evaluacion> mEvaluacion = null;
+    public List<Evaluacion> listEvaluacions() {
+        List<Evaluacion> mEvaluacion = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
@@ -133,5 +127,4 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
         }
         return mEvaluacion;
     }
-   
 }
