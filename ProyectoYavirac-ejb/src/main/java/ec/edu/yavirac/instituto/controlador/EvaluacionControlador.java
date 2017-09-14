@@ -29,10 +29,7 @@ public class EvaluacionControlador implements Serializable{
     private EvaluacionServicio evaluacionServicio; 
     private HibernateUtil util = new HibernateUtil();
     
-    @PostConstruct
-    public void init() {
-        util.init();
-    }
+    
     public Boolean insert(Evaluacion evaluacion) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
