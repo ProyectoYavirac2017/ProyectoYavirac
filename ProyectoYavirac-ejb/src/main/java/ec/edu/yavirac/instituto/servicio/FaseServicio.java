@@ -71,10 +71,10 @@ public class FaseServicio implements Ifase, Serializable {
             List parameList = new ArrayList();
             parameList.add(query_1);
 
-            List<Fase> listClients = ds.customQuery(parameList, Fase.class);
+            List<Fase> listFases = ds.customQuery(parameList, Fase.class);
 
-            if (!listClients.isEmpty()) {
-                findmFase = listClients.get(0);
+            if (!listFases.isEmpty()) {
+                findmFase = listFases.get(0);
             }
 
         } catch (Exception ex) {
