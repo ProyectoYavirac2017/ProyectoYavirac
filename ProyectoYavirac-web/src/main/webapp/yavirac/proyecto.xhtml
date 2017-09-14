@@ -10,6 +10,9 @@
          <h:form id="fpro">
             <p:panel header="Nuevo Proyecto">
                 <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="INGRESAR USUARIO"/>
+                    <h:inputText value="#{proyectoBean.proyecto.usuario}"/>
+                    
                     <h:outputText value="NOMBRE:"/>
                     <h:inputText value="#{proyectoBean.proyecto.nombre}"/>
 
