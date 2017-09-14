@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author PS
  */
 public class Roger_Elias_Pozo_Sanchez {
-    
+    String Nombre="ROGER ELIAS";
+    String Apellido="POZO SANCHEZ";
 }
