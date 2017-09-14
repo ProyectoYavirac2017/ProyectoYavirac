@@ -1,10 +1,36 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="./template/template.xhtml">
+                template="./template/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <ui:define name="content">
-        content
+         <h:form id="fpro">
+            <p:panel header="Nuevo Cliente">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="NOMBRE:"/>
+                    <h:inputText value=""/>
+
+                    <p:outputLabel value="DESCRIPCION"/>
+                    <p:inputText value=""/>
+
+                    <h:outputText value="LUGAR"/>
+                    <h:inputText value=""/>
+
+                    <p:outputLabel value="FECHA DE INICIO"/>
+                    <p:inputText value=""/>
+
+                    <h:outputText value="FECHA DE FIN"/>
+                    <h:inputText value=""/>
+                </h:panelGrid>
+                <f:facet name="footer">
+                    <p:commandButton value="GUARDAR" update=":fpro"
+                                     actionListener=""/>
+                </f:facet>
+            </p:panel>
+        </h:form>
     </ui:define>
 
 </ui:composition>
