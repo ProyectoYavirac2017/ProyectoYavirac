@@ -28,6 +28,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
         util.init();
     }
 
+    @Override
    public Boolean insert(Evidencia evidencia ,HibernateUtil util) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
@@ -53,6 +54,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
 
     }
 
+    @Override
    public Boolean update(Evidencia evidencia,HibernateUtil util) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
@@ -77,6 +79,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
         return exito;
     }
 
+    @Override
     public Evidencia findByCode(Evidencia evidencia,HibernateUtil util) {
         Evidencia findmEvidencia = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
@@ -101,6 +104,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
         return findmEvidencia;
     }
 
+    @Override
      public List<Evidencia> findByFacNum(HibernateUtil util){
            List<Evidencia> mAsistencia = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
