@@ -1,10 +1,36 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="./template/template.xhtml">
-
+                template="./template/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
     <ui:define name="content">
-        content
-    </ui:define>
+        <h:form id="fact">
+            <p:panel header="Nueva Actividad">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="Fase:"/>
+                    <h:inputText value="#{actividadBean.actividad.fase}"/>
 
-</ui:composition>
+                    <h:outputLabel value="Fecha de creacion:"/>
+                    <h:inputText value="#{actividadBean.actividad.fechaCreate}"/>
+
+                    <h:outputText value="Tarea:"/>
+                    <h:inputText value="#{actividadBean.actividad.tarea}"/>
+
+                    <h:outputLabel value="Meta:"/>
+                    <h:inputText value="#{actividadBean.actividad.meta}"/>
+
+                    <h:outputText value="Observacion:"/>
+                    <h:inputText value="#{actividadBean.actividad.observacion}"/>
+
+                    <h:outputLabel value="Evaluacions:"/>
+                    <h:inputText value="#{actividadBean.actividad.evaluacions}"/>
+                </h:panelGrid>
+                <f:facet name="footer">
+                    <p:commandButton value="GUARDAR" update=":fact"
+                                     actionListener="#{actividadBean.add(evt)}"/>
+                </f:facet>
+            </p:panel>
+        </h:form>
+    </ui:define>
