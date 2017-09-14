@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class luis_vicente_maza_valladolid {
+    String Luis_vicente_Maza_Valladolid;
     
 }
