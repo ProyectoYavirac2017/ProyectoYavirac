@@ -9,6 +9,11 @@ package ec.edu.yavirac.instituto.web.comunidad;
  *
  * @author Jorge
  */
+
+
 public class kimberly_mayte_sanchez_martinez {
+    
+    public String Nombre1="Gabriel Aguirre ";
+    public String Apellidos1= "Flores";
     
 }
