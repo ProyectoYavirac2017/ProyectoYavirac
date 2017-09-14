@@ -7,8 +7,10 @@ package ec.edu.yavirac.instituto.comunidad;
 
 /**
  *
- * @author Labs-DECC
+ * @author Maria
  */
 public class Jamil_Eduardo_Loyola_Giron {
+    String nombres="Jamil Eduardo";
+    String apellidos="Loyola Giron";
     
 }
