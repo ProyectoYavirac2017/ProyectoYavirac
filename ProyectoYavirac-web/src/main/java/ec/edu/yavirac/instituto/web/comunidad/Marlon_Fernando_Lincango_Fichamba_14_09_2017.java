@@ -11,4 +11,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Marlon_Fernando_Lincango_Fichamba_14_09_2017 {
     
+    private String Marlon_Fernando;
+    private String Lincango_Fichamba;
 }
