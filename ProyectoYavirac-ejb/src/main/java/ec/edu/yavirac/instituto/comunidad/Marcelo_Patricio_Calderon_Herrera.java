@@ -10,5 +10,7 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author marce
  */
 public class Marcelo_Patricio_Calderon_Herrera {
+    String nombres = "Marcelo Patricio";
+    String apellidos = "Calderon Herrera";
     
 }
