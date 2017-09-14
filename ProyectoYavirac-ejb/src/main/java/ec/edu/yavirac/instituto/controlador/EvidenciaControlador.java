@@ -101,18 +101,14 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
         return findmEvidencia;
     }
 
-    public List<Evidencia> findByFacNum(Evidencia evidencia,HibernateUtil util) {
-        List<Evidencia> mEvidencia = null;
+     public List<Evidencia> findByFacNum(HibernateUtil util){
+           List<Evidencia> mAsistencia = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
-            mEvidencia = evidenciaControlador.findByFacNum(evidencia, util);
-            QueryParameter query_1 = new QueryParameter(QueryParameter.$TYPE_WHERE);
-            query_1.setColumnName("EVI_NUM");
-            query_1.setWhereClause("=");
-            query_1.setValue(evidencia.getIdEvidencia());
+            mAsistencia = evidenciaControlador.findByFacNum(util);
         } catch (Exception ex) {
-            // log.level.error("GetListEmployeess : " + ex.getMessage());
+            // log.level.error("GetListClientes : " + ex.getMessage());
             delegateException = ex;
         } finally {
             hss.close();
@@ -124,7 +120,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
                 }
             }
         }
-        return mEvidencia;
+        return mAsistencia;
     }
 
 }
