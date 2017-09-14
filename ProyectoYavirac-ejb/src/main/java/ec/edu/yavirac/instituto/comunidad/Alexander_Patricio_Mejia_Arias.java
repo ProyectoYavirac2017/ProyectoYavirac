@@ -12,4 +12,5 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Alexander_Patricio_Mejia_Arias {
     String Alexander_Patricio_Mejia_Arias;
     String SantiagODanielRecaldeGomez;
+    String Andrez_Flores;
 }
