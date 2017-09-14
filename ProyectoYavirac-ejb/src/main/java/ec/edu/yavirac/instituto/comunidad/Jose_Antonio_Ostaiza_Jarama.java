@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Jose_Antonio_Ostaiza_Jarama {
+    String Jose_Antonio_Ostaiza_Jarama;
     
 }
