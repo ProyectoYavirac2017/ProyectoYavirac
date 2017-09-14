@@ -12,4 +12,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
 public class Edgar_Fabian_Estrella_Guambuguete {
     private String nombre="EDGAR_FABIAN";
     private String apellidos="ESTRELLA_GUAMBUGUETE";
+    
+    private String nombre1="JEFFERSON";
+    private String apellidos1="JAVIER";
 }
