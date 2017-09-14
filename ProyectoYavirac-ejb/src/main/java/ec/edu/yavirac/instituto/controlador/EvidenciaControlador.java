@@ -28,10 +28,7 @@ public class EvidenciaControlador implements Serializable{
     private EvidenciaServicio evidenciaServicio; 
     private HibernateUtil util = new HibernateUtil();
     
-    @PostConstruct
-    public void init() {
-        util.init();
-    }
+    
     public Boolean insert(Evidencia evidencia) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
