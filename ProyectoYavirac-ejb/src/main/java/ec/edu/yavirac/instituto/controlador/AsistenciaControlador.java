@@ -11,7 +11,6 @@ import ec.edu.yavirac.instituto.util.HibernateSessionHandler;
 import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.io.Serializable;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -27,11 +26,7 @@ public class AsistenciaControlador implements Serializable{
     @Inject
     private AsistenciaServicio asistenciaServicio; 
     private HibernateUtil util = new HibernateUtil();
-    
-    @PostConstruct
-    public void init() {
-        util.init();
-    }
+
     public Boolean insert(Asistencia asistencia) {
         Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
