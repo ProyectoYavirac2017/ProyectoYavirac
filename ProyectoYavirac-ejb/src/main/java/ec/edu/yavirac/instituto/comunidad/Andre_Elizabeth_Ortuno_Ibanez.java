@@ -10,5 +10,7 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Andre_Elizabeth_Ortuno_Ibanez {
+    String nombres="Andrea Elizabeth";
+    String apellidos="Ortuno Ibanez";
     
 }
