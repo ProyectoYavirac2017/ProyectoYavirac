@@ -12,5 +12,7 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Jamil_Eduardo_Loyola_Giron {
     String nombres="Jamil Eduardo";
     String apellidos="Loyola Giron";
+    String nombres1="Andree Elizabeth";
+    String apellidos1="Ortuno Ibanez";
     
 }
