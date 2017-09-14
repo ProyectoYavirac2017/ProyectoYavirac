@@ -1,10 +1,36 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="./template/template.xhtml">
+                template="./template/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <ui:define name="content">
-        content
+        <h:form id="evi">
+            <p:panel header="Control Evidencia">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="Actividad Evidencia:"/>
+                    <h:inputText value="#{evidenciaBean.evidencia.actividad}"/>
+                    <h:outputLabel value="Usuario Evidencia"/>
+                    <p:inputText value="#{evidenciaBean.evidencia.usuario}"/>
+                    <h:outputLabel value="PDF"/>
+                    <p:inputText value="#{evidenciaBean.evidencia.pdf}"/>
+                    <h:outputLabel value="Usuario Video"/>
+                    <p:inputText value="#{evidenciaBean.evidencia.foto}"/>
+                    <h:outputLabel value="Foto"/>
+                    <p:inputText value="#{evidenciaBean.evidencia.foto}"/>
+                 
+                </h:panelGrid>
+                <f:facet name="footer">
+                    <p:commandButton value="GUARDAR" update=":eva"
+                                     actionListener="#{evaluacionBean.add(evt)}"/>
+                </f:facet>
+
+            </p:panel>
+            
+        </h:form>
+        
     </ui:define>
 
 </ui:composition>
