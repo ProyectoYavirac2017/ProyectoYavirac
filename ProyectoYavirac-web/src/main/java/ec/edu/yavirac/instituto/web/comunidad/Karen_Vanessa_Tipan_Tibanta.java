@@ -11,6 +11,9 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Karen_Vanessa_Tipan_Tibanta {
     
+  public String KAREN1;
+  public String TIPAN1;
+  
     public String KAREN;
     public String TIPAN;
 }
