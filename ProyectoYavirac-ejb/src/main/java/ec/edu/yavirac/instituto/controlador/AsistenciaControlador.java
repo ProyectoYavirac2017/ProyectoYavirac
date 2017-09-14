@@ -38,8 +38,6 @@ public class AsistenciaControlador implements Serializable{
         Exception delegateException = null;
         try {
             if (asistencia != null) {
-                // cliente.setCliIdcli("C"+RandomStringUtils.randomNumeric(4));
-                //cliente.setCliIdcli("C" +RandomStringUtils.randomNumeric(5));
                 exito = asistenciaServicio.insert(asistencia, util);
             }
         } catch (Exception ex) {
