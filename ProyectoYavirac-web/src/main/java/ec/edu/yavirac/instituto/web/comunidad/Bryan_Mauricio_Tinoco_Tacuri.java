@@ -12,4 +12,5 @@ package ec.edu.yavirac.instituto.web.comunidad;
 public class Bryan_Mauricio_Tinoco_Tacuri {
  
     String nombre = "Bryan Mauricio Tinoco Tacuri" ;
+    private String Luis_vicente_Maza_Valladolid;
 }
