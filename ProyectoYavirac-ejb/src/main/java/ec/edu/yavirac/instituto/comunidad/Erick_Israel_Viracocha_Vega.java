@@ -10,5 +10,7 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Erick_Israel_Viracocha_Vega {
+    public String NOMBRE="ERICK_ISRAEL";
+    public String APELLIDO="VIRACOCHA_VEGA";
     
 }
