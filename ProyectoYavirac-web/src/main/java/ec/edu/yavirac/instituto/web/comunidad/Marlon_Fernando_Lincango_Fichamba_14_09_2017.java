@@ -13,4 +13,8 @@ public class Marlon_Fernando_Lincango_Fichamba_14_09_2017 {
     
     private String Marlon_Fernando;
     private String Lincango_Fichamba;
+    
+     public String NOMBRE="ERICK_ISRAEL";
+    public String APELLIDO="VIRACOCHA_VEGA";
+    
 }
