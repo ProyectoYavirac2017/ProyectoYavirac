@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author user
  */
 public class Kevin_Jordan_Holguin_Muñoz {
-    
+    String Nombre ="KEVIN JORDAN";
+    String Apellidos ="HOLGUIN MUÑOZ";
 }
