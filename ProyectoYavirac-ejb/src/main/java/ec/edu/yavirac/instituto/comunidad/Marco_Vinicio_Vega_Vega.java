@@ -10,5 +10,5 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Marco_Vinicio_Vega_Vega {
-    
+    String nombre;
 }
