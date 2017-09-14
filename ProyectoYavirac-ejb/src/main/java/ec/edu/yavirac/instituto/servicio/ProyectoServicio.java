@@ -88,7 +88,7 @@ public class ProyectoServicio implements Iproyecto, Serializable  {
     }
 
     @Override
-    public List<Proyecto> listProyectos(HibernateUtil util) {
+    public List<Proyecto> listProyecto(HibernateUtil util) {
              List<Proyecto> mProyectos = null;
         try {
             
