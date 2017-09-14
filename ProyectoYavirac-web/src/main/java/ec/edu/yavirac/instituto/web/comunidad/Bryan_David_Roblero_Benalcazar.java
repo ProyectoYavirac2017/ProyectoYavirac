@@ -11,4 +11,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Bryan_David_Roblero_Benalcazar {
     
+    public String Nombre = "BRYAN_DAVID";
+    public String Apellido = "ROBLERO_BENALCAZAR";
+    
 }
