@@ -11,6 +11,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Sammy Guergachi <sguergachi at gmail.com>
  */
 public class Pablo_Ismael_Rosero_Castillo {
+    String Pablo_Ismael_Rosero_Castillo;
     String Nombre="Holger David Reyes Ligna";
 
 }
