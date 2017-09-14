@@ -20,6 +20,6 @@ public interface Ievidencia {
 
     public Evidencia findByCode(Evidencia evidencia,HibernateUtil util);
 
-    public List<Evidencia> findByFacNum(Evidencia evidencia,HibernateUtil util);
+    public List<Evidencia> findByFacNum(HibernateUtil util);
     
 }
