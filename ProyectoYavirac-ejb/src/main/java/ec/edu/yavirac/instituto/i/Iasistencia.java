@@ -5,10 +5,21 @@
  */
 package ec.edu.yavirac.instituto.i;
 
+import ec.edu.yavirac.instituto.modelo.Asistencia;
+import ec.edu.yavirac.instituto.util.HibernateUtil;
+import java.util.List;
+
 /**
  *
  * @author Labs-DECC
  */
 public interface Iasistencia {
+    public Boolean insert(Asistencia asistencia, HibernateUtil util);
+
+    public Boolean update(Asistencia asistencia, HibernateUtil util);
+
+    public Asistencia findById(Asistencia asistencia, HibernateUtil util);
+
+    public List<Asistencia> listAsistencias(HibernateUtil util);
     
 }
