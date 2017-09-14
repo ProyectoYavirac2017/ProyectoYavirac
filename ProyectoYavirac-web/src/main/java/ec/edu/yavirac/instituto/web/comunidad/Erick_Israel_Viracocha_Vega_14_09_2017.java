@@ -22,4 +22,7 @@ public class Erick_Israel_Viracocha_Vega_14_09_2017 {
     public String Nombre = "BRYAN_DAVID";
     public String Apellido = "ROBLERO_BENALCAZAR";
     
+    public String nombre = "Franklin_Omar" ;
+    public String apellido= "Ronquillo_Pazmino";
+    
 }
