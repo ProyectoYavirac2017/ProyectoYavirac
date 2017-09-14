@@ -11,4 +11,7 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Bryan_Mauricio_Tinoco_Tacuri {
     
+        private String Ronald_Nicolas_Suarez_Salgado;
+
+    
 }
