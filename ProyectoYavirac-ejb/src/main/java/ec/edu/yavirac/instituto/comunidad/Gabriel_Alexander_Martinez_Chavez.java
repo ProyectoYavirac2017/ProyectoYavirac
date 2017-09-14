@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author gaboo
  */
 public class Gabriel_Alexander_Martinez_Chavez {
-    
+    String nombres = "Gabriel Alexander";
+    String apellidos = "Martinez Chavez";
 }
