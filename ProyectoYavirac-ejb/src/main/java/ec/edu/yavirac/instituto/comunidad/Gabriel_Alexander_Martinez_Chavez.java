@@ -12,4 +12,8 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Gabriel_Alexander_Martinez_Chavez {
     String nombres = "Gabriel Alexander";
     String apellidos = "Martinez Chavez";
+    
+    
+    String nombres1 = "Marcelo Patricio";
+    String apellidos1 = "Calderon Herrera";
 }
