@@ -10,5 +10,10 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Monica_Mishell_Llumitaxi_Quilligana {
+  
     
+    String Nombre = "Mishell ";
+    String Apellido = "Llumitaxi";
+    
+   
 }
