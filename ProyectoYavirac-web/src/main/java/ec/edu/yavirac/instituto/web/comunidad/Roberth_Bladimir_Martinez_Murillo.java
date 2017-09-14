@@ -11,4 +11,5 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Roberth_Bladimir_Martinez_Murillo {
     String Gixon_Javier_Andrade_Ulloa;
+    String Roberth_Bladimir_Martinez_Murillo;
 }
