@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Bryan_Rodrigo_Quito_Barahona {
-    public String Bryan_Rodrigo_Quito_Barahona;
+    public String nombres="Bryan_Rodrigo";
+    public String apellidos="Quito_Barahona";
 }
