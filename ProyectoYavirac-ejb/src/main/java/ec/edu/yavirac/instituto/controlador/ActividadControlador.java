@@ -27,12 +27,7 @@ public class ActividadControlador implements Serializable{
      private static final long serialVersionUID = -7260505214139170751L;
     @Inject
     private ActividadServicio actividadServicio; //no instancio el obj. solo si da errores instancio
-    private HibernateUtil util = new HibernateUtil();
-    
-    @PostConstruct
-    public void init(){
-        util.init();
-    }
+    private HibernateUtil util = new HibernateUtil();  
     
     public Boolean insert(Actividad actividad) {
         Boolean exito = false;
