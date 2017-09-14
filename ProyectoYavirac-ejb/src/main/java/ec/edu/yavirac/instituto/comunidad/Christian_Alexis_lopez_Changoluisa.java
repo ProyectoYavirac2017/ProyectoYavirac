@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Christian_Alexis_lopez_Changoluisa {
+  public String Christian_Alexis_Lopez_Changoluisa;
     
 }
