@@ -10,9 +10,8 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Juan_Esteban_Rocha_Lascano {
-    
-    String Nombre="Juan Esteban Rocha Lascano";
-    String Nombre1="Kenny Andrés Cruz García";
+     
+    String Nombre="Kenny Andrés Cruz García";
     
     
 }
