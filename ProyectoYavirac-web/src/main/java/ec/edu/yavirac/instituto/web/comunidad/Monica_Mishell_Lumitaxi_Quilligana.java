@@ -11,8 +11,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Monica_Mishell_Lumitaxi_Quilligana {
     
-     String Nombre = "Mishell ";
+        String Nombre = "Mishell ";
     String Apellido = "Llumitaxi";
-    
-   
 }
