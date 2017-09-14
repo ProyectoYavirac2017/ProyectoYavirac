@@ -52,5 +52,13 @@ public class UsuarioBean implements Imethods, Serializable {
     public void remove(ActionEvent evt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
     
 }
