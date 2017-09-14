@@ -11,4 +11,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Jamil_Eduardo_Loyola_Giron_14_09_2017 {
     
+    String nombres="Andrea Elizabeth";
+     String apellidos="Ortuno Ibanez";
+    
 }
