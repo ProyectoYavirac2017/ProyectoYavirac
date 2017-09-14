@@ -11,9 +11,12 @@
             <p:panel header="Nuevo Proyecto">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="INGRESAR USUARIO"/>
-                    <h:inputText value="#{proyectoBean.proyecto.usuario}"/>
-                    
-                    <h:outputText value="NOMBRE:"/>
+                       <p:selectCheckboxMenu id="menu"  label="SELECCIONA..."
+                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
+                        <f:selectItems value="#{proyectoBean.proyecto.usuario}" />
+                    </p:selectCheckboxMenu>
+                                 
+                    <h:outputText value="NOMBRE DEL PROYECTO:"/>
                     <h:inputText value="#{proyectoBean.proyecto.nombre}"/>
 
                     <p:outputLabel value="DESCRIPCION"/>
