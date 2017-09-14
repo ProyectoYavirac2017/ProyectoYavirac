@@ -95,7 +95,7 @@ public class EvaluacionServicio implements Ievaluacion,Serializable {
     }
 
     @Override
-    public List<Evaluacion> listEvaluacion(HibernateUtil util) {
+    public List<Evaluacion> listEvaluaciones(HibernateUtil util) {
          List<Evaluacion> mEvaluacions = null;
         try {
             
