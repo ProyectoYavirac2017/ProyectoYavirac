@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author RicardoStevenJose
  */
 public class Jose_Antonio_Ostaiza_Jarama_14_09_2017 {
-   String Jose_Antonio_Ostaiza_Jarama; 
+   String Jose_Antonio_Ostaiza_Jarama;
+   String julio_fabricio_jaramillo_atahualpa;
 }
