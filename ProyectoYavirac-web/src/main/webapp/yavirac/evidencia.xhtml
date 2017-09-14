@@ -10,14 +10,16 @@
         <h:form id="evi">
             <p:panel header="Control Evidencia">
                 <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="EVIDENCIA:"/>
+                    <h:inputText value="#{evidenciaBean.evidencia.idEvidencia}"/>
                     <h:outputText value="Actividad Evidencia:"/>
                     <h:inputText value="#{evidenciaBean.evidencia.actividad}"/>
                     <h:outputLabel value="Usuario Evidencia"/>
                     <p:inputText value="#{evidenciaBean.evidencia.usuario}"/>
                     <h:outputLabel value="PDF"/>
                     <p:inputText value="#{evidenciaBean.evidencia.pdf}"/>
-                    <h:outputLabel value="Usuario Video"/>
-                    <p:inputText value="#{evidenciaBean.evidencia.foto}"/>
+                    <h:outputLabel value="Video"/>
+                    <p:inputText value="#{evidenciaBean.evidencia.video}"/>
                     <h:outputLabel value="Foto"/>
                     <p:inputText value="#{evidenciaBean.evidencia.foto}"/>
                  
