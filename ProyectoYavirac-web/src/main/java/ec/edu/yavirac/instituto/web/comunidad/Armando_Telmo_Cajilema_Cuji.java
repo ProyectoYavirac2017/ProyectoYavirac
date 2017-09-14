@@ -5,10 +5,10 @@
  */
 package ec.edu.yavirac.instituto.web.comunidad;
 
-/**
- *
- * @author Labs-DECC
- */
+
 public class Armando_Telmo_Cajilema_Cuji {
     
+ public String ARMANDO;
+ public String CAJILEMA;
+ 
 }
