@@ -14,12 +14,12 @@ import java.util.List;
  * @author Labs-DECC
  */
 public interface Ievidencia {
-    public Boolean insert(Evidencia evidencia ,HibernateUtil util);
+    public Boolean insert(Evidencia evidencia, HibernateUtil util);
 
-    public Boolean update(Evidencia evidencia,HibernateUtil util);
+    public Boolean update(Evidencia evidencia, HibernateUtil util);
 
-    public Evidencia findByCode(Evidencia evidencia,HibernateUtil util);
+    public Evidencia findById(Evidencia evidencia, HibernateUtil util);
 
-    public List<Evidencia> findByFacNum(HibernateUtil util);
+    public List<Evidencia> listEvidencias(HibernateUtil util);
     
 }
