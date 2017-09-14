@@ -13,4 +13,7 @@ public class Marcelo_Patricio_Calderon_Herrera {
     String nombres = "Marcelo Patricio";
     String apellidos = "Calderon Herrera";
     
+    String nombresC = "Gabriel Alexander";
+    String apellidosC = "Martinez Chavez";
+    
 }
