@@ -10,5 +10,7 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Franklin_Omar_Ronquillo_Pazmino {
+  public String nombre= "Franklin_Omar" ;
+  public String apellido= "Ronquillo_Pazmiño";
     
 }
