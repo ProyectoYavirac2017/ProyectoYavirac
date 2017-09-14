@@ -10,6 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Kenny_Andres_Cruz_Garcia {
-    
-    String Nombre="Juan Esteban Rocha Lascano";
+
+    String Nombre1 = "Kenny Andrés Cruz García";
 }
