@@ -64,7 +64,7 @@ public class FaseServicio implements Ifase, Serializable {
                     getSessionFactory().getCurrentSession());
 
             QueryParameter query_1 = new QueryParameter(QueryParameter.$TYPE_WHERE);
-            query_1.setColumnName("cliIdcli");
+            query_1.setColumnName("idFase");
             query_1.setWhereClause("=");
             query_1.setValue(fase.getIdFase());
 
