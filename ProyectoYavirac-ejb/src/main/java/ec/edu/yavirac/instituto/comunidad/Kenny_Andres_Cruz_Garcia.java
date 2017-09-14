@@ -11,5 +11,5 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Kenny_Andres_Cruz_Garcia {
 
-    String Nombre1 = "Kenny Andrés Cruz García";
+    String KennyAndrésCruzGarcía;
 }
