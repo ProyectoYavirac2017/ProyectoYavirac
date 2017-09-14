@@ -7,64 +7,45 @@
         <title>REGISTRO</title>
     </h:head>
     <h:body>
-        <<<<<<< .mine
-        Hello from Facelets
-        <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                        template="yavirac/template/template.xhtml"
-                        xmlns:h="http://xmlns.jcp.org/jsf/html"
-                        xmlns:p="http://primefaces.org/ui"
-                        xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <h:form id="fusu">
+            <p:panel header="Nuevo Usuario">
+                <h:panelGrid columns="2" cellpadding="5">     
+                    <p:outputLabel value="USER NAME"/>
+                    <p:inputText value="#{usuarioBean.usuario.username}"/>
+                    
+                    <p:outputLabel value="PASSWORD"/>
+                    <p:inputText value="#{usuarioBean.usuario.password}"/>
 
-            <ui:define name="content">
+                    <p:outputLabel value="NOMBRE"/>
+                    <p:inputText value="#{usuarioBean.usuario.nombres}"/>
 
-                <h:form id="fusu">
-                    <p:panel header="Nuevo Usuario">
-                        <h:panelGrid columns="2" cellpadding="5">     
-                            <p:outputLabel value="USER NAME"/>
-                            <p:inputText value="#{usuarioBean.usuario.username}"/>
+                    <p:outputLabel value="APELLIDO"/>
+                    <p:inputText value="#{usuarioBean.usuario.apellidos}"/>
 
-                            <p:outputLabel value="PASSWORD"/>
-                            <p:inputText value="#{usuarioBean.usuario.password}"/>
-                            <h:form id="fusu">
-                                <p:panel header="Nuevo Usuario">
-                                    <h:panelGrid columns="2" cellpadding="5">     
-                                        <p:outputLabel value="USER NAME"/>
-                                        <p:inputText value="#{usuarioBean.usuario.username}"/>
+                    <p:outputLabel value="CI"/>
+                    <p:inputText value="#{usuarioBean.usuario.cedula}"/>
 
+                    <p:outputLabel value="MOVIL/TELEFONO"/>
+                    <p:inputText value="#{usuarioBean.usuario.movil}"/>
 
-                                        <p:outputLabel value="PASSWORD"/>
-                                        <p:inputText value="#{usuarioBean.usuario.password}"/>
+                    <p:outputLabel value="EMAIL"/>
+                    <p:inputText value="#{usuarioBean.usuario.email}"/>
 
-                                        <p:outputLabel value="NOMBRE"/>
-                                        <p:inputText value="#{usuarioBean.usuario.nombres}"/>
+                    <p:outputLabel value="ROL"/>
+                    <p:selectOneMenu id="rol" value="#{usuarioBean.usuario.rol}" style="width:125px">
+                        <f:selectItem itemLabel="PASANTE" itemValue="PASANTE" />
+                        <f:selectItem itemLabel="TUTOR" itemValue="TUTOR" />
+                    </p:selectOneMenu>
 
-                                        <p:outputLabel value="APELLIDO"/>
-                                        <p:inputText value="#{usuarioBean.usuario.apellidos}"/>
-
-                                        <p:outputLabel value="CI"/>
-                                        <p:inputText value="#{usuarioBean.usuario.cedula}"/>
-
-                                        <p:outputLabel value="MOVIL/TELEFONO"/>
-                                        <p:inputText value="#{usuarioBean.usuario.movil}"/>
-
-                                        <p:outputLabel value="EMAIL"/>
-                                        <p:inputText value="#{usuarioBean.usuario.email}"/>
-
-                                        <p:outputLabel value="ROL"/>
-                                        <p:selectOneMenu id="rol" value="#{usuarioBean.usuario.rol}" style="width:125px">
-                                            <f:selectItem itemLabel="PASANTE" itemValue="PASANTE" />
-                                            <f:selectItem itemLabel="TUTOR" itemValue="TUTOR" />
-                                        </p:selectOneMenu>
-
-                                    </h:panelGrid>
-                                    <f:facet name="footer">
-                                        <p:commandButton value="GUARDAR" update=":fusu"
-                                                         actionListener="#{usuarioBean.add(evt)}"/>
-                                    </f:facet>
-                                </p:panel>
+                </h:panelGrid>
+                <f:facet name="footer">
+                    <p:commandButton value="GUARDAR" update=":fusu"
+                                     actionListener="#{usuarioBean.add(evt)}"/>
+                </f:facet>
+            </p:panel>
 
 
-                            </h:form>
-                            </h:body>
+        </h:form>
+    </h:body>
 
-                            </html>
+</html>
