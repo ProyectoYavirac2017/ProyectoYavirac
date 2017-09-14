@@ -13,5 +13,8 @@ public class Jamil_Eduardo_Loyola_Giron_14_09_2017 {
     
     String nombres="Andrea Elizabeth";
      String apellidos="Ortuno Ibanez";
+     
+     String nombres1="Jamil Eduardo";
+    String apellidos1="Loyola Giron";
     
 }
