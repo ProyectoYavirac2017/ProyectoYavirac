@@ -18,7 +18,7 @@ import java.util.List;
  * @author Labs-DECC
  */
 public class AsistenciaServicio implements Iasistencia {
-  
+
     @Override
     public Boolean insert(Asistencia asistencia, HibernateUtil util) {
         Boolean exito = false;
@@ -88,14 +88,14 @@ public class AsistenciaServicio implements Iasistencia {
 
     @Override
     public List<Asistencia> listAsistencias(HibernateUtil util) {
- List<Asistencia> mAsistencias = null;
+        List<Asistencia> mAsistencias = null;
         try {
-            
+
             DAOServices ds = new DAOServices(util.
                     getSessionFactory().getCurrentSession());
-            
+
             List parameList = new ArrayList();
-            
+
             List<Asistencia> listAsistencias = ds.customQuery(parameList, Asistencia.class);
             if (!listAsistencias.isEmpty()) {
                 mAsistencias = (List<Asistencia>) listAsistencias;
@@ -105,7 +105,6 @@ public class AsistenciaServicio implements Iasistencia {
         }
 
         return mAsistencias;
-
 
     }
 
