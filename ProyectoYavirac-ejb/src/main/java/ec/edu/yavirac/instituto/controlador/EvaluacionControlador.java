@@ -112,7 +112,7 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
     }
 
     @Override
-    public List<Evaluacion> listEvaluacion(HibernateUtil util) {
+    public List<Evaluacion> listEvaluaciones(HibernateUtil util) {
           List<Evaluacion> mEvaluacion = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
