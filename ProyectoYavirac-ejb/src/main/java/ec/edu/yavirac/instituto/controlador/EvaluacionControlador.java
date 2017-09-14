@@ -117,7 +117,7 @@ public class EvaluacionControlador implements Ievaluacion,Serializable {
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
-            mEvaluacion = evaluacionServicio.listEvaluacion(util);
+            mEvaluacion = evaluacionServicio.listEvaluaciones(util);
         } catch (Exception ex) {
             // log.level.error("GetListClientes : " + ex.getMessage());
             delegateException = ex;
