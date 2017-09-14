@@ -11,19 +11,19 @@
             <p:panel header="Nuevo Cliente">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="NOMBRE:"/>
-                    <h:inputText value=""/>
+                    <h:inputText value="#{proyectoBean.proyecto.nombre}"/>
 
                     <p:outputLabel value="DESCRIPCION"/>
-                    <p:inputText value=""/>
+                    <p:inputText value="#{proyectoBean.proyecto.descripcion}"/>
 
                     <h:outputText value="LUGAR"/>
-                    <h:inputText value=""/>
+                    <h:inputText value="#{proyectoBean.proyecto.lugar}"/>
 
                     <p:outputLabel value="FECHA DE INICIO"/>
-                    <p:inputText value=""/>
+                    <p:inputText value="#{proyectoBean.proyecto.fechaIn}"/>
 
                     <h:outputText value="FECHA DE FIN"/>
-                    <h:inputText value=""/>
+                    <h:inputText value="#{proyectoBean.proyecto.fechaOut}"/>
                 </h:panelGrid>
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fpro"
