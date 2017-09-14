@@ -5,15 +5,13 @@
  */
 package ec.edu.yavirac.instituto.controlador;
 
-import ec.edu.yavirac.instituto.dao.DAOServices;
-import ec.edu.yavirac.instituto.dao.QueryParameter;
+
 import ec.edu.yavirac.instituto.i.Ievaluacion;
 import ec.edu.yavirac.instituto.modelo.Evaluacion;
 import ec.edu.yavirac.instituto.servicio.EvaluacionServicio;
 import ec.edu.yavirac.instituto.util.HibernateSessionHandler;
 import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.LocalBean;
