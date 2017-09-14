@@ -11,4 +11,6 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Kevin_Anderson_Zambrano_Ulloa {
     
+    private String Jose_Rodolfo_Obando_Maldonado;
+    
 }
