@@ -10,5 +10,5 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author NADIE
  */
 public class José_Rodolfo_Obando_Maldonado {
-    
+    private String Kevin_Anderson_Zambrano_Ulloa;
 }
