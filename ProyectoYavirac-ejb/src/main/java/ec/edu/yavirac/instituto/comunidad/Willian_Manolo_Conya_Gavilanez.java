@@ -10,5 +10,5 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Willian_Manolo_Conya_Gavilanez {
-    
+    String WillianManoloConyaGavilanez;
 }
