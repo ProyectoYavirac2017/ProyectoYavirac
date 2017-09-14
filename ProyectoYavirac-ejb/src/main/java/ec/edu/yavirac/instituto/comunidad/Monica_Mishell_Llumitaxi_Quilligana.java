@@ -14,6 +14,7 @@ public class Monica_Mishell_Llumitaxi_Quilligana {
     
     String Nombre = "Mishell ";
     String Apellido = "Llumitaxi";
-    
+    String Nombre1 ="KEVIN JORDAN";
+    String Apellidos1 ="HOLGUIN MUÑOZ";
    
 }
