@@ -11,4 +11,5 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Santiago_Daniel_Recalde_Gomez {
     String SantiagoDanielRecalde;
+    String AlexanderPatricioMejiaArias;
 }
