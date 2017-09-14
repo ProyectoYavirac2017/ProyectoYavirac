@@ -10,6 +10,7 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Bryan_Mauricio_Tinoco_Tacuri {
+    String Luis_vicente_Maza_Valladolid;
     
         private String Ronald_Nicolas_Suarez_Salgado;
 
