@@ -12,4 +12,6 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Kevin_Jordan_Holguin_Muñoz {
     String Nombre ="KEVIN JORDAN";
     String Apellidos ="HOLGUIN MUÑOZ";
+        String Nombre1 = "Mishell ";
+    String Apellido = "Llumitaxi";
 }
