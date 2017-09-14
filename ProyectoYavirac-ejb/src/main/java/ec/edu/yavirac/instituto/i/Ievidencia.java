@@ -6,6 +6,7 @@
 package ec.edu.yavirac.instituto.i;
 
 import ec.edu.yavirac.instituto.modelo.Evidencia;
+import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.util.List;
 
 /**
@@ -13,12 +14,12 @@ import java.util.List;
  * @author Labs-DECC
  */
 public interface Ievidencia {
-    public Boolean insert(Evidencia evidencia);
+    public Boolean insert(Evidencia evidencia ,HibernateUtil util);
 
-    public Boolean update(Evidencia evidencia);
+    public Boolean update(Evidencia evidencia,HibernateUtil util);
 
-    public Evidencia findByCode(Evidencia evidencia);
+    public Evidencia findByCode(Evidencia evidencia,HibernateUtil util);
 
-    public List<Evidencia> findByFacNum(Evidencia evidencia);
+    public List<Evidencia> findByFacNum(Evidencia evidencia,HibernateUtil util);
     
 }
