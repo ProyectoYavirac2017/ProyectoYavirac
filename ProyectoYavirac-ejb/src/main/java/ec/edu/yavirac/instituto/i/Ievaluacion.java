@@ -20,5 +20,5 @@ public interface Ievaluacion {
 
     public Evaluacion findById (Evaluacion evaluacion,HibernateUtil util);
 
-    public List<Evaluacion> listEvaluacion (HibernateUtil util);
+    public List<Evaluacion> listEvaluaciones (HibernateUtil util);
 }
