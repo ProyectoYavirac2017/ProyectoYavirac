@@ -11,4 +11,8 @@ package ec.edu.yavirac.instituto.web.comunidad;
  */
 public class Andrea_Elizabeth_Ortuno_Ibanez_14_09_2017 {
     
+    String nombres="Andrea_Elizabeth";
+    String apellidos="Ortuno_Ibanez";
+    
+    
 }
