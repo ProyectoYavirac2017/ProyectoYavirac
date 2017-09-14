@@ -10,12 +10,16 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Labs-DECC
  */
 public class Erick_Israel_Viracocha_Vega_14_09_2017 {
-    public String NOMBRE="ERICK_ISRAEL";
-    public String APELLIDO="VIRACOCHA_VEGA";
-    
+
+    public String NOMBRE = "ERICK_ISRAEL";
+    public String APELLIDO = "VIRACOCHA_VEGA";
+
     public String Marlon__Fernando;
     public String Lincango__Fichamba;
-    
-    
+
+
+
+    public String Nombre = "BRYAN_DAVID";
+    public String Apellido = "ROBLERO_BENALCAZAR";
     
 }
