@@ -12,4 +12,7 @@ package ec.edu.yavirac.instituto.comunidad;
 public class Bryan_Rodrigo_Quito_Barahona {
     public String nombres="Bryan_Rodrigo";
     public String apellidos="Quito_Barahona";
+    
+    public String nombre="Dixon";
+    public String apellido="Andrade";
 }
