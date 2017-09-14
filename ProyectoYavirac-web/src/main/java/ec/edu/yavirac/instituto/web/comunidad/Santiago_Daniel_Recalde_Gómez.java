@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author F.Recalde
  */
 public class Santiago_Daniel_Recalde_Gómez {
+    String SantiagoDanielRecaldeGomez;
     
 }
