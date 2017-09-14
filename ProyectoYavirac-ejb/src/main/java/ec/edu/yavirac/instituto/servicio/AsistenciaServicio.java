@@ -65,7 +65,7 @@ public class AsistenciaServicio implements Iasistencia {
                     getSessionFactory().getCurrentSession());
 
             QueryParameter query_1 = new QueryParameter(QueryParameter.$TYPE_WHERE);
-            query_1.setColumnName("ID_ASISTENCIA");
+            query_1.setColumnName("idAsistencia");
             query_1.setWhereClause("=");
             query_1.setValue(asistencia.getIdAsistencia());
 
