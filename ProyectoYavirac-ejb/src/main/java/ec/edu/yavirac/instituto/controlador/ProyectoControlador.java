@@ -108,7 +108,7 @@ public class ProyectoControlador implements Serializable {
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
-            mProyectos = proyectoServicio.listProyectos(util);
+            mProyectos = proyectoServicio.listProyecto(util);
         } catch (Exception ex) {
             // log.level.error("GetListProyectos : " + ex.getMessage());
             delegateException = ex;
