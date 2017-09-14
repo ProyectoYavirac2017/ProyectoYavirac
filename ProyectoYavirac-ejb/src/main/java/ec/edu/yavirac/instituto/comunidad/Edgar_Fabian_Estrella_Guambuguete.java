@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Edgar_Fabian_Estrella_Guambuguete {
-    
+    private String nombre;
+    private String apellidos;
 }
