@@ -27,6 +27,7 @@ public class FaseControlador implements Serializable {
     private static final long serialVersionUID = -3073928298785803508L;
     @Inject
     private FaseServicio faseServicio; //no instancio el obj. solo si da errores instancio
+    
     private HibernateUtil util = new HibernateUtil();
     
     public Boolean insert(Fase fase) {

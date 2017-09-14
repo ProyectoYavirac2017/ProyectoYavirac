@@ -12,11 +12,15 @@ import ec.edu.yavirac.instituto.modelo.Asistencia;
 import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.util.ArrayList;
 import java.util.List;
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author Labs-DECC
  */
+@Stateless
+@LocalBean
 public class AsistenciaServicio implements Iasistencia {
 
     @Override

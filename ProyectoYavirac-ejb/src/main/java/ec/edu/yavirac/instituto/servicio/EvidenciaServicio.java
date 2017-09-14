@@ -13,11 +13,15 @@ import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author Labs-DECC
  */
+@Stateless
+@LocalBean
 public class EvidenciaServicio implements Ievidencia, Serializable{
     private static final long serialVersionUID = -5971913672287412493L;
 
