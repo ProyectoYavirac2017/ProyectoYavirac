@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Jorge
  */
 public class kimberly_mayte_sanchez_martinez {
-    
+   public String nombres = "Kimberly Mayte";
+   public String apellidos = "Sánchez Martínez";
 }
