@@ -10,5 +10,5 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Santiago_Daniel_Recalde_Gomez {
-    
+    String SantiagoDanielRecalde;
 }
