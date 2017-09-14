@@ -11,9 +11,10 @@ import java.util.List;
 
 /**
  *
- * @author Labs-DECC
+ * @author Grupo proyecto
  */
 public interface Iproyecto {
+    
     public Boolean insert(Proyecto proyecto,HibernateUtil util);
 
     public Boolean update(Proyecto proyecto,HibernateUtil util);
