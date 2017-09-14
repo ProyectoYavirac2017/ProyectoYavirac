@@ -10,6 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author kencruga
  */
 public class Kenny_Andres_Cruz_Garcia {
-    public String KennyAndresCruzGarcia;
-    public String JuanEstebanRochaLascano;
+    public String Kenny_Andres_Cruz_Garcia;
+    public String Juan_Esteban_Rocha_Lascano;
 }
