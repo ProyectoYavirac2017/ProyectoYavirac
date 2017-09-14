@@ -21,5 +21,5 @@ public interface Iproyecto {
 
     public Proyecto findById(Proyecto proyecto,HibernateUtil util);
 
-    public List<Proyecto> listProyectos(HibernateUtil util);
+    public List<Proyecto> listProyecto(HibernateUtil util);
 }
