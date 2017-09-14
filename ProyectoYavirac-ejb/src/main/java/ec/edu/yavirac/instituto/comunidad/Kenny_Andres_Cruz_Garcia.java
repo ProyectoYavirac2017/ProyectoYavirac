@@ -11,5 +11,6 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Kenny_Andres_Cruz_Garcia {
 
-    String KennyAndrésCruzGarcía;
+    public String Kenny_Andres_Cruz_Garcia;
+    public String Juan_Esteban_Rocha_Lascano;
 }
