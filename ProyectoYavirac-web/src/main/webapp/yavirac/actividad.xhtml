@@ -9,22 +9,36 @@
         <h:form id="fact">
             <p:panel header="Nueva Actividad">
                 <h:panelGrid columns="2" cellpadding="5">
+                    
+                     <h:outputText value="Proyecto"/>
+                     <p:selectOneMenu value="#{faseBean.fase.proyecto}" style="width:140px" >
+                        <f:selectItem itemLabel="Seleccione" itemValue="" />
+                        <f:selectItem itemLabel="2" itemValue="Xbox One" />
+                        <f:selectItem itemLabel="3" itemValue="PS4" />
+                        <f:selectItem itemLabel="4" itemValue="Wii U" />
+                    </p:selectOneMenu>
+                    
                     <h:outputText value="Fase:"/>
-                    <h:inputText value="#{actividadBean.actividad.fase}"/>
-
-                    <h:outputLabel value="Fecha de creacion:"/>
-                    <h:inputText value="#{actividadBean.actividad.fechaCreate}"/>
-
+                    <p:selectOneMenu  value="#{actividadBean.actividad.fase}" style="width:140px">
+                        <f:selectItem itemLabel="Seleccione" itemValue="" />
+                        <f:selectItem itemLabel="2" itemValue="Xbox One" />
+                        <f:selectItem itemLabel="3" itemValue="PS4" />
+                        <f:selectItem itemLabel="4" itemValue="Wii U" />
+                    </p:selectOneMenu>
+                    
+                    <h:outputLabel value="Fecha de Creación:"/>
+                    <p:calendar id="popup" value="#{calendarView.date2}" />
+                   
                     <h:outputText value="Tarea:"/>
-                    <h:inputText value="#{actividadBean.actividad.tarea}"/>
+                    <h:inputTextarea value="#{actividadBean.actividad.tarea}" rows="5" cols="18"/>
 
                     <h:outputLabel value="Meta:"/>
                     <h:inputText value="#{actividadBean.actividad.meta}"/>
 
-                    <h:outputText value="Observacion:"/>
-                    <h:inputText value="#{actividadBean.actividad.observacion}"/>
+                    <h:outputText value="Observación:"/>
+                    <h:inputTextarea value="#{actividadBean.actividad.observacion}" rows="5" cols="18"/>
 
-                    <h:outputLabel value="Evaluacions:"/>
+                    <h:outputLabel value="Evaluación:"/>
                     <h:inputText value="#{actividadBean.actividad.evaluacions}"/>
                 </h:panelGrid>
                 <f:facet name="footer">
