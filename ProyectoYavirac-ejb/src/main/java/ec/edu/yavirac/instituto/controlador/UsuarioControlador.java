@@ -10,7 +10,6 @@ import ec.edu.yavirac.instituto.util.HibernateSessionHandler;
 import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.io.Serializable;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -27,10 +26,6 @@ public class UsuarioControlador implements Serializable {
     private UsuarioServicio usuarioServicio; //no instancio el obj. solo si da errores instancio
     private HibernateUtil util = new HibernateUtil();
     
-    @PostConstruct
-    public void init(){
-        util.init();
-    }
     
     public Boolean insert(Usuario usuario) {
         Boolean exito = false;

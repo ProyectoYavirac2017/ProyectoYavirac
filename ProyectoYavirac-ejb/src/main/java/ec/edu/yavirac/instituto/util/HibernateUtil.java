@@ -5,7 +5,6 @@
  */
 package ec.edu.yavirac.instituto.util;
 
-import ec.edu.yavirac.instituto.logger.L;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -18,7 +17,7 @@ import org.hibernate.service.ServiceRegistry;
  */
 public class HibernateUtil {
 
-    private final static L log = new L(HibernateUtil.class);
+    //private final static L log = new L(HibernateUtil.class);
     private SessionFactory sessionFactory;
     private ServiceRegistry sessionServiceRegistry;
 
@@ -32,7 +31,7 @@ public class HibernateUtil {
             sessionServiceRegistry = standardRegistry;
             sessionFactory = configuration.buildSessionFactory(sessionServiceRegistry);
         } catch (Throwable ex) {
-            log.level.info("Initial SessionFactory creation failed." + ex);
+            //log.level.info("Initial SessionFactory creation failed." + ex);
             System.out.println(">> error :" + ex.getLocalizedMessage());
             throw new ExceptionInInitializerError(ex);
         }
@@ -46,7 +45,7 @@ public class HibernateUtil {
         if (sessionFactory == null) {
             throw new NullPointerException("No se creo la conexion.");
         } else {
-            log.level.info("Se ha iniciado la sesion de Hiberate");
+           // log.level.info("Se ha iniciado la sesion de Hiberate");
         }
     }
 }

@@ -12,7 +12,6 @@ import ec.edu.yavirac.instituto.util.HibernateSessionHandler;
 import ec.edu.yavirac.instituto.util.HibernateUtil;
 import java.io.Serializable;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;

@@ -1,6 +1,5 @@
 package ec.edu.yavirac.instituto.util;
 
-import ec.edu.yavirac.instituto.logger.L;
 import org.hibernate.SessionFactory;
 
 /*
@@ -15,7 +14,7 @@ import org.hibernate.SessionFactory;
 public class HibernateSessionHandler {
 
     private SessionFactory dbServicesSession;
-    private final static L log = new L(HibernateSessionHandler.class);
+   // private final static L log = new L(HibernateSessionHandler.class);
 
     public HibernateSessionHandler(HibernateUtil util) {
 
@@ -25,7 +24,7 @@ public class HibernateSessionHandler {
             dbServicesSession.getCurrentSession().beginTransaction();
 
         } catch (Exception e) {
-            log.level.error("Error en la sesion de Hibernate", e);
+            //log.level.error("Error en la sesion de Hibernate", e);
         }
     }
 
@@ -34,10 +33,10 @@ public class HibernateSessionHandler {
             dbServicesSession.getCurrentSession().getTransaction().commit();
         } catch (Exception e) {
             if (dbServicesSession.getCurrentSession().getTransaction().isActive()) {
-                log.level.error("Trying to rollback database transaction after exception. Módulo RapidLoans_Users.", e);
+             //   log.level.error("Trying to rollback database transaction after exception. Módulo RapidLoans_Users.", e);
                 dbServicesSession.getCurrentSession().getTransaction().rollback();
             }
-            log.level.error("Error al cerrar la sesion de Hibernate", e);
+           // log.level.error("Error al cerrar la sesion de Hibernate", e);
         } finally {
             dbServicesSession.getCurrentSession().close();
         }
