@@ -14,11 +14,11 @@ import java.util.List;
  * @author Labs-DECC
  */
 public interface Iusuario {
-  public Boolean insert(Iusuario usuario, HibernateUtil util);
+  public Boolean insert(Usuario usuario, HibernateUtil util);
 
-    public Boolean update(Iusuario usuario, HibernateUtil util);
+    public Boolean update(Usuario usuario, HibernateUtil util);
 
-    public Usuario findById(Iusuario usuario, HibernateUtil util);
+    public Usuario findById(Usuario usuario, HibernateUtil util);
 
     public List<Usuario> listUsuario(HibernateUtil util);  
 }
