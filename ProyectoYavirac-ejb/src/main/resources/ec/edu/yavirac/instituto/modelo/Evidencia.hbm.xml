@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 9:17:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ec.edu.yavirac.instituto.modelo.Evidencia" table="EVIDENCIA" catalog="yavirac" optimistic-lock="version">
+        <id name="idEvidencia" type="int">
+            <column name="ID_EVIDENCIA" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="actividad" class="ec.edu.yavirac.instituto.modelo.Actividad" fetch="select">
+            <column name="ACTIVIDAD_ID_EVID" not-null="true" />
+        </many-to-one>
+        <many-to-one name="usuario" class="ec.edu.yavirac.instituto.modelo.Usuario" fetch="select">
+            <column name="USUARIO_ID_EVID" not-null="true" />
+        </many-to-one>
+        <property name="pdf" type="binary">
+            <column name="PDF" />
+        </property>
+        <property name="video" type="binary">
+            <column name="VIDEO" />
+        </property>
+        <property name="foto" type="binary">
+            <column name="FOTO" />
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name="FLAG" />
+        </property>
+    </class>
+</hibernate-mapping>

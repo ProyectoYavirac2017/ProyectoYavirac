@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 9:17:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ec.edu.yavirac.instituto.modelo.Evaluacion" table="EVALUACION" catalog="yavirac" optimistic-lock="version">
+        <id name="idEvaluacion" type="java.lang.Integer">
+            <column name="ID_EVALUACION" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="actividad" class="ec.edu.yavirac.instituto.modelo.Actividad" fetch="select">
+            <column name="ACTIVIDAD_ID_EVALU" not-null="true" />
+        </many-to-one>
+        <property name="calificaion" type="big_decimal">
+            <column name="CALIFICAION" precision="8" />
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name="FLAG" />
+        </property>
+    </class>
+</hibernate-mapping>

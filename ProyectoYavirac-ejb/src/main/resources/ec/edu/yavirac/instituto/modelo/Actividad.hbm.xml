@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 9:17:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ec.edu.yavirac.instituto.modelo.Actividad" table="ACTIVIDAD" catalog="yavirac" optimistic-lock="version">
+        <id name="idActividad" type="java.lang.Integer">
+            <column name="ID_ACTIVIDAD" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="fase" class="ec.edu.yavirac.instituto.modelo.Fase" fetch="select">
+            <column name="FASE_ID_ACTI" not-null="true" />
+        </many-to-one>
+        <property name="fechaCreate" type="date">
+            <column name="FECHA_CREATE" length="10" />
+        </property>
+        <property name="tarea" type="string">
+            <column name="TAREA" length="45" />
+        </property>
+        <property name="meta" type="string">
+            <column name="META" length="45" />
+        </property>
+        <property name="observacion" type="string">
+            <column name="OBSERVACION" length="45" />
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name="FLAG" />
+        </property>
+        <set name="evaluacions" table="EVALUACION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ACTIVIDAD_ID_EVALU" not-null="true" />
+            </key>
+            <one-to-many class="ec.edu.yavirac.instituto.modelo.Evaluacion" />
+        </set>
+        <set name="evidencias" table="EVIDENCIA" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ACTIVIDAD_ID_EVID" not-null="true" />
+            </key>
+            <one-to-many class="ec.edu.yavirac.instituto.modelo.Evidencia" />
+        </set>
+    </class>
+</hibernate-mapping>
