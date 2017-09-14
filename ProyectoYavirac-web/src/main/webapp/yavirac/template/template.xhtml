@@ -2,27 +2,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
-        <title>Facelets Template</title>
+        <title>menu</title>
     </h:head>
 
     <h:body>
 
         <div id="top">
-            <ui:insert name="top">Top</ui:insert>
+            <ui:insert name="top">
+                <p:menubar>
+                    <p:menuitem value="ACTIVIDAD" outcome="/yavirac/actividad"/>
+                    <p:menuitem value="ASISTENCIA" outcome="/yavirac/asistencia"/>
+                    <p:menuitem value="EVALUACION" outcome="/yavirac/evaluacion"/>
+                    <p:menuitem value="EVIDENCIA" outcome="/yavirac/evidencia"/>
+                    <p:menuitem value="FACE" outcome="/yavirac/fase"/>
+                    <p:menuitem value="PROYECTO" outcome="/yavirac/proyecto"/>
+                    <p:menuitem value="usuario" outcome="/yavirac/usuario"/>
+                </p:menubar>
+            </ui:insert>
         </div>
 
         <div id="content" class="center_content">
-            <ui:insert name="content">Content</ui:insert>
+            <ui:insert name="content">
+
+            </ui:insert>
         </div>
 
         <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
+            <ui:insert name="bottom">YAVIRAC</ui:insert>
         </div>
 
     </h:body>
