@@ -10,5 +10,8 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Karen_Vanessa_Tipan_Tibanta {
+    public String KAREN1;
+    public String TIPAN1;
+    
     
 }
