@@ -10,5 +10,5 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author ELECTROM
  */
 public class Gixon_Javier_Andrade_Ulloa {
-    
+    String Roberth_Bladimir_Martinez_Murillo;
 }
