@@ -24,18 +24,18 @@ import javax.inject.Inject;
  */
 @Stateless
 @LocalBean
-public class FaseControlador implements Ifase, Serializable{
-    
+public class FaseControlador implements Ifase, Serializable {
+
     private static final long serialVersionUID = -3073928298785803508L;
-@Inject
+    @Inject
     private FaseServicio faseServicio; //no instancio el obj. solo si da errores instancio
     private HibernateUtil util = new HibernateUtil();
-    
+
     @PostConstruct
-    public void init(){
+    public void init() {
         util.init();
     }
-    
+
     @Override
     public Boolean insert(Fase fase, HibernateUtil util) {
         Boolean exito = false;
@@ -44,7 +44,7 @@ public class FaseControlador implements Ifase, Serializable{
         try {
             if (fase != null) {
                 //fase.setCliIdcli("C"+RandomStringUtils.randomNumeric(4));
-                exito = faseServicio.insert(fase,util);
+                exito = faseServicio.insert(fase, util);
             }
         } catch (Exception ex) {
             // // log.level.error("insert : " + ex.getMessage());
@@ -64,12 +64,12 @@ public class FaseControlador implements Ifase, Serializable{
 
     @Override
     public Boolean update(Fase fase, HibernateUtil util) {
-         Boolean exito = false;
+        Boolean exito = false;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
             if (fase != null) {
-                exito = faseServicio.update(fase,util);
+                exito = faseServicio.update(fase, util);
             }
         } catch (Exception ex) {
             // // log.level.error("insert : " + ex.getMessage());
@@ -94,7 +94,7 @@ public class FaseControlador implements Ifase, Serializable{
         Exception delegateException = null;
         try {
             if (fase != null) {
-                findmFase = faseServicio.findById(fase,util);
+                findmFase = faseServicio.findById(fase, util);
             }
         } catch (Exception ex) {
             // log.level.error("FindUserLogin : " + ex.getMessage());
@@ -114,7 +114,7 @@ public class FaseControlador implements Ifase, Serializable{
 
     @Override
     public List<Fase> listFases(HibernateUtil util) {
-         List<Fase> mFases = null;
+        List<Fase> mFases = null;
         HibernateSessionHandler hss = new HibernateSessionHandler(util);
         Exception delegateException = null;
         try {
@@ -134,6 +134,4 @@ public class FaseControlador implements Ifase, Serializable{
         }
         return mFases;
     }
-    }
-    
-    
+}
