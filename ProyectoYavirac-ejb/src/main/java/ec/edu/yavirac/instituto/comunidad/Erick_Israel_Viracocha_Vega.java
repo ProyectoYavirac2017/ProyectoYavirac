@@ -16,4 +16,7 @@ public class Erick_Israel_Viracocha_Vega {
     public String Marlon__Fernando;
     public String Lincango__Fichamba;
     
+     public String nombre= "Franklin_Omar" ;
+     public String apellido= "Ronquillo_Pazmiño";
+    
 }
