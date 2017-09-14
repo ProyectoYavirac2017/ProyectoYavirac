@@ -7,8 +7,11 @@
         <h:form id="asi">
             <p:panel header="CONTROL DE ASISTENCIA">
                 <h:panelGrid columns="2" cellpadding="5">
-                    <h:outputText value="USUARIO:"/>
-                    <h:inputText value="#{usuarioBean.usuario.asistencias}"/>
+                   <h:outputText value="USUARIO"/>
+                       <p:selectCheckboxMenu id="menu"  label="SELECCIONA..."
+                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
+                           <f:selectItems value="#{asistenciaBean.asistencia.usuario}" />
+                    </p:selectCheckboxMenu>
 
                     <p:outputLabel value="FECHA:"/>
                     <p:inputText value="#{asistenciaBean.asistencia.fecha}"/>
