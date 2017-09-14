@@ -11,5 +11,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Labs-DECC
  */
 public class Geovanny_Gabriel_Aguirre_Flores_14_09_2017 {
+    public String Nombre1="Gabriel Aguirre ";
     
 }
