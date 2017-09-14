@@ -11,4 +11,7 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Roger_Elias_Pozo_Sanchez {
     
+    String nombres = "ROGER ELIAS";
+    String apellidos = "POZO SANCHEZ";
+    
 }
