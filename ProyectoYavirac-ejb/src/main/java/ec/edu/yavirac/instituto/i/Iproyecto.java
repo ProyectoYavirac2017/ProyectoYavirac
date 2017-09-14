@@ -5,10 +5,20 @@
  */
 package ec.edu.yavirac.instituto.i;
 
+import ec.edu.yavirac.instituto.modelo.Proyecto;
+import ec.edu.yavirac.instituto.util.HibernateUtil;
+import java.util.List;
+
 /**
  *
  * @author Labs-DECC
  */
 public interface Iproyecto {
-    
+    public Boolean insert(Proyecto proyecto,HibernateUtil util);
+
+    public Boolean update(Proyecto proyecto,HibernateUtil util);
+
+    public Proyecto findById(Proyecto proyecto,HibernateUtil util);
+
+    public List<Proyecto> listProyectos(HibernateUtil util);
 }
