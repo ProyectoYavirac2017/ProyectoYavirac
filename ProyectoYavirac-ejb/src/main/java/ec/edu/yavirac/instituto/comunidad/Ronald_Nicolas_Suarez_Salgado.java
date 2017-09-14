@@ -11,4 +11,6 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Ronald_Nicolas_Suarez_Salgado {
     
+    String Ronald_Nicolas_Suarez_Salgado;
+    
 }
