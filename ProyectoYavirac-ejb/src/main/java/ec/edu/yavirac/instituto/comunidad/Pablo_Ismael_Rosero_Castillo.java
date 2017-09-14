@@ -10,5 +10,10 @@ package ec.edu.yavirac.instituto.comunidad;
  * @author Labs-DECC
  */
 public class Pablo_Ismael_Rosero_Castillo {
+   
+    
+    public String Pablo_Ismael_Rosero_Castillo;
+    
+    
     
 }
