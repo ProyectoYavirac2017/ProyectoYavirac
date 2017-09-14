@@ -10,7 +10,8 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author JUAN
  */
 public class Holger_David_Reyes_Ligna {
-    String Nombre="Holger David Reyes Ligna";
+    
+    public String Holger_David_Reyes_Ligna;
     String Pablo_Ismael_Rosero_Castillo;
     
 }
