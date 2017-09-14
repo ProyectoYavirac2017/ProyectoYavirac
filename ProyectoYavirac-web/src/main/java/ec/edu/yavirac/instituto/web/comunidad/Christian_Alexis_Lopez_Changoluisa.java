@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author DELL
  */
 public class Christian_Alexis_Lopez_Changoluisa {
+    public String Christian_Alexis_lopez_Changoluisa;
     
 }
