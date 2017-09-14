@@ -108,7 +108,7 @@ public class EvidenciaControlador implements Ievidencia ,Serializable {
         try {
             mEvidencia = evidenciaControlador.findByFacNum(evidencia, util);
             QueryParameter query_1 = new QueryParameter(QueryParameter.$TYPE_WHERE);
-            query_1.setColumnName("FAC_NUM");
+            query_1.setColumnName("EVI_NUM");
             query_1.setWhereClause("=");
             query_1.setValue(evidencia.getIdEvidencia());
         } catch (Exception ex) {
