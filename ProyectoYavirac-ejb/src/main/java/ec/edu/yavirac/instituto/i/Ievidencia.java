@@ -14,6 +14,7 @@ import java.util.List;
  * @author Labs-DECC
  */
 public interface Ievidencia {
+
     public Boolean insert(Evidencia evidencia, HibernateUtil util);
 
     public Boolean update(Evidencia evidencia, HibernateUtil util);
@@ -21,5 +22,4 @@ public interface Ievidencia {
     public Evidencia findById(Evidencia evidencia, HibernateUtil util);
 
     public List<Evidencia> listEvidencias(HibernateUtil util);
-    
 }
