@@ -11,5 +11,5 @@ package ec.edu.yavirac.instituto.comunidad;
  */
 public class Jose_Antonio_Ostaiza_Jarama {
     String Jose_Antonio_Ostaiza_Jarama;
-    
+    String julio_fabricio_jaramillo_atahualpa;
 }
