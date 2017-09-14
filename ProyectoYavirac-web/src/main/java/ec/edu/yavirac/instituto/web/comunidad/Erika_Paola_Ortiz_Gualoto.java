@@ -10,5 +10,7 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Pcmaster2
  */
 public class Erika_Paola_Ortiz_Gualoto {
+    private String Erika_Paola;
+    private String Ortiz_Gualoto;
     
 }
