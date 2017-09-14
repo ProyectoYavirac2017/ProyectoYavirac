@@ -10,5 +10,6 @@ package ec.edu.yavirac.instituto.web.comunidad;
  * @author Labs-DECC
  */
 public class Bryan_Mauricio_Tinoco_Tacuri {
-    
+ 
+    private String nombre = "Bryan Mauricio Tinoco Tacuri" ;
 }
