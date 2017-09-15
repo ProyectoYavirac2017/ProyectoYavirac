@@ -6,11 +6,16 @@
 package ec.edu.yavirac.instituto.web.bean;
 
 import ec.edu.yavirac.instituto.controlador.UsuarioControlador;
+import ec.edu.yavirac.instituto.i.Iusuario;
 import ec.edu.yavirac.instituto.modelo.Usuario;
+import ec.edu.yavirac.instituto.servicio.UsuarioServicio;
 import ec.edu.yavirac.instituto.web.bean.i.Imethods;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.faces.event.ActionEvent;
+import javax.faces.model.SelectItem;
 import javax.inject.Named;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
@@ -21,8 +26,8 @@ import javax.inject.Inject;
 @Named(value = "usuarioBean")
 @ViewScoped
 public class UsuarioBean implements Imethods, Serializable {
-
-   // private static final long serialVersionUID = -2033941921967400870L;
+    // private static final long serialVersionUID = -2033941921967400870L;
+    
     
     private Usuario usuario;
     @Inject
@@ -60,5 +65,6 @@ public class UsuarioBean implements Imethods, Serializable {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+ 
     
 }
