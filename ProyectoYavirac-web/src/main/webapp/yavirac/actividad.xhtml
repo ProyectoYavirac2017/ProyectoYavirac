@@ -6,41 +6,34 @@
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
     <ui:define name="content">
-        <h:form id="act" id="elim" id="add">
+        <h:form id="add">
             <p:panel header="Nueva Actividad">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="Proyecto:"/>
                     <p:selectOneMenu value="#{proyectoBean.proyecto.nombre}" style="width:140px">
                         <f:selectItem itemLabel="Seleccione" itemValue=""/>
-                        
                     </p:selectOneMenu>
                     <h:outputText value="Fase:"/>
                     <p:selectOneMenu  value="#{faseBean.fase.proyecto.fases}" style="width:140px">
                         <f:selectItem itemLabel="Seleccione" itemValue="" />
-                        
                     </p:selectOneMenu>
                     <h:outputLabel value="Fecha de Creación:"/>
                     <p:calendar id="popup" value="#{calendarView.date2}"/>
                     <f:selectItems value="#{actividadBean.actividad.fechaCreate}"/>
-                    
                     <h:outputText value="Tarea:"/>
                     <h:inputTextarea value="#{actividadBean.actividad.tarea}" rows="5" cols="18"/>
-                    
                     <h:outputLabel value="Meta:"/>
                     <h:inputText value="#{actividadBean.actividad.meta}"/>
-                    
                     <h:outputText value="Observación:"/>
                     <h:inputTextarea value="#{actividadBean.actividad.observacion}" rows="5" cols="18"/>
-                    
                 </h:panelGrid>
-                
                 <f:facet name="footer">
-                    <p:commandButton id="dynaButton" value="Show" type="button" icon="ui-icon-extlink"/>
+                    <p:commandButton id="dynaButton" value="Acciones" type="button" icon="ui-icon-extlink"/>
                     <p:menu overlay="true" trigger="dynaButton" my="left top" at="left bottom">
                         <p:submenu label="Ajax">
                             <p:menuitem value="GUARDAR" actionListener="#{actividadBean.add(evt)}" update="add" icon="ui-icon-disk"/>
-                            <p:menuitem value="ACTUALIZAR" actionListener="#{actividadBean.modify(evt)}" update="act" icon="ui-icon-arrowrefresh-1-w"/>
-                            <p:menuitem value="ELIMINAR" actionListener="#{actividadBean.remove(evt)}" update="elim" ajax="false" icon="ui-icon-close"/>
+                            <p:menuitem value="ACTUALIZAR" actionListener="#{actividadBean.modify(evt)}" update="add" icon="ui-icon-arrowrefresh-1-w"/>
+                            <p:menuitem value="ELIMINAR" actionListener="#{actividadBean.remove(evt)}" update="add" ajax="false" icon="ui-icon-close"/>
                         </p:submenu>
                     </p:menu>
                 </f:facet>
