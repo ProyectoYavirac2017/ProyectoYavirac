@@ -28,10 +28,7 @@ import org.primefaces.event.SelectEvent;
 @Named(value = "proyectoBean")
 @ViewScoped
 public class ProyectoBean implements Imethods, Serializable {
-    
-    private Date date3;
-   
-    
+           
     private Proyecto proyecto;
     @Inject
     private ProyectoControlador proyectoControl;
@@ -50,7 +47,7 @@ public class ProyectoBean implements Imethods, Serializable {
            }
         }
     }
-    //Código para calendario
+    /*/Código para calendario
      public void onDateSelect(SelectEvent event) {
         FacesContext facesContext = FacesContext.getCurrentInstance();
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
@@ -63,7 +60,7 @@ public class ProyectoBean implements Imethods, Serializable {
         requestContext.update("form:display");
         requestContext.execute("PF('dlg').show()");
     }
-    //Código para calendario
+    Código para calendario*/
     @Override
     public void modify(ActionEvent evt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -80,14 +77,6 @@ public class ProyectoBean implements Imethods, Serializable {
 
     public void setProyecto(Proyecto proyecto) {
         this.proyecto = proyecto;
-    }
-    
-     public Date getDate3() {
-        return date3;
-    }
-
-    public void setDate3(Date date3) {
-        this.date3 = date3;
     }
     /**
      * Creates a new instance of ProyectoBean
