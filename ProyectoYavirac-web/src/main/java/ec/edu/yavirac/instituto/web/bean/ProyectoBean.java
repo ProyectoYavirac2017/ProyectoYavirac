@@ -30,9 +30,7 @@ import org.primefaces.event.SelectEvent;
 public class ProyectoBean implements Imethods, Serializable {
     
     private Date date3;
-
    
-    
     
     private Proyecto proyecto;
     @Inject
