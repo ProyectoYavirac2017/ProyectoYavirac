@@ -20,6 +20,10 @@
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":eva"
                                      actionListener="#{evaluacionBean.add(evt)}"/>
+                      <p:commandButton value="MODIFICAR" update=":eva"
+                                       actionListener="#{evaluacionBean.modify(evt)}"/>
+                    <p:commandButton value="ELIMINAR" update=":asi"
+                                     actionListener="#{evaluacionBean.remove(evt)}"/>
                 </f:facet>
 
             </p:panel>
