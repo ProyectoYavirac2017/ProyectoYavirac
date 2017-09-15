@@ -17,8 +17,8 @@ public class Proyecto  implements java.io.Serializable {
      private String nombre;
      private String descripcion;
      private String lugar;
-     private Date fechaIn;
-     private Date fechaOut;
+     private String fechaIn; //CAMBIO DE DATE A STRING
+     private String fechaOut; //CAMBIO DE DATE A STRING
      private Integer flag;
      private Set fases = new HashSet(0);
 
@@ -29,7 +29,7 @@ public class Proyecto  implements java.io.Serializable {
     public Proyecto(Usuario usuario) {
         this.usuario = usuario;
     }
-    public Proyecto(Usuario usuario, String nombre, String descripcion, String lugar, Date fechaIn, Date fechaOut, Integer flag, Set fases) {
+    public Proyecto(Usuario usuario, String nombre, String descripcion, String lugar, String fechaIn, String fechaOut, Integer flag, Set fases) { //CAMBIO DE DATE A STRING
        this.usuario = usuario;
        this.nombre = nombre;
        this.descripcion = descripcion;
@@ -75,18 +75,18 @@ public class Proyecto  implements java.io.Serializable {
     public void setLugar(String lugar) {
         this.lugar = lugar;
     }
-    public Date getFechaIn() {
+    public String getFechaIn() {
         return this.fechaIn;
     }
     
-    public void setFechaIn(Date fechaIn) {
+    public void setFechaIn(String fechaIn) {
         this.fechaIn = fechaIn;
     }
-    public Date getFechaOut() {
+    public String getFechaOut() {//CAMBIO DE DATE A STRING
         return this.fechaOut;
     }
     
-    public void setFechaOut(Date fechaOut) {
+    public void setFechaOut(String fechaOut) {//CAMBIO DE DATE A STRING
         this.fechaOut = fechaOut;
     }
     public Integer getFlag() {
