@@ -5,12 +5,12 @@
       xmlns:p="http://primefaces.org/ui">
 
     <h:head>
-        <title>LOGGIN</title>
+        <title>Sistema Yavirac</title>
     </h:head>
     <h:body style="text-align:center">
         <p:growl id="mensajes" showDetail="true" life="2000" />
         <h:form>
-            <p:panel header="Login" style="width:350px">
+            <p:panel header="Ingresa tu usuario y contraseña" style="width:350px">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputLabel for="username" value="Usuario:" />
                     <p:inputText id="username"
@@ -19,7 +19,7 @@
                     <p:password id="password" required="true"
                                 label="password" />
                     <f:facet name="footer">
-                        <p:commandButton id="loginButton" value="Login"/>
+                        <p:commandButton id="loginButton" value="Ingresar"/>
                         <p:commandButton id="btnRegister" value="Registrar" action="register" immediate="true"/>
                     </f:facet>
                 </h:panelGrid>
