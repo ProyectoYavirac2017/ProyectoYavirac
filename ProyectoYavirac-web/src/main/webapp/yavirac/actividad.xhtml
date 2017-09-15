@@ -21,14 +21,19 @@
                     </p:selectOneMenu>
                     <h:outputLabel value="Fecha de Creación:"/>
                     <p:calendar id="popup" value="#{calendarView.date2}"/>
-                    <f:selectItems value="#{actividadBean.actividad.setFechaCreate(calendarView.date2)}"/>
+                    <f:selectItems value="#{actividadBean.actividad.fechaCreate}"/>
+                    
                     <h:outputText value="Tarea:"/>
                     <h:inputTextarea value="#{actividadBean.actividad.tarea}" rows="5" cols="18"/>
+                    
                     <h:outputLabel value="Meta:"/>
                     <h:inputText value="#{actividadBean.actividad.meta}"/>
+                    
                     <h:outputText value="Observación:"/>
                     <h:inputTextarea value="#{actividadBean.actividad.observacion}" rows="5" cols="18"/>
+                    
                 </h:panelGrid>
+                
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fact"
                                      actionListener="#{actividadBean.add(evt)}"/>
