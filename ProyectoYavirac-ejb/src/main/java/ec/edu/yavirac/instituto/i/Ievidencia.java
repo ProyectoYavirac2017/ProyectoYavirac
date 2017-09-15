@@ -14,8 +14,6 @@ import java.util.List;
  * @author Labs-DECC
  */
 public interface Ievidencia {
-    
-    //modi
 
     public Boolean insert(Evidencia evidencia, HibernateUtil util);
 
