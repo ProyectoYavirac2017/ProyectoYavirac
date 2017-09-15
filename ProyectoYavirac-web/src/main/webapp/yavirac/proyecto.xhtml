@@ -11,20 +11,24 @@
             <p:panel header="Nuevo Proyecto">
                 <h:panelGrid columns="2" cellpadding="5">
                             
-                    <h:outputText value="NOMBRE DEL PROYECTO:"/>
-                    <h:inputText value="#{proyectoBean.proyecto.nombre}"/>
+                    <p:outputLabel value="NOMBRE DEL PROYECTO:"/>
+                    <p:inputText value="#{proyectoBean.proyecto.nombre}"/>
 
                     <p:outputLabel value="DESCRIPCION"/>
                     <p:inputText value="#{proyectoBean.proyecto.descripcion}"/>
 
-                    <h:outputText value="LUGAR"/>
-                    <h:inputText value="#{proyectoBean.proyecto.lugar}"/>
+                    <p:outputLabel value="LUGAR"/>
+                    <p:inputText value="#{proyectoBean.proyecto.lugar}"/>
 
                     <p:outputLabel value="FECHA DE INICIO"/>
+                    <p:calendar pattern="dd/MM/yyyy" locale="pt" value="#{proyectoBean.date3}" showOn="button" />
                     <p:inputText value="#{proyectoBean.proyecto.fechaIn}"/>
 
-                    <h:outputText value="FECHA DE FIN"/>
-                    <h:inputText value="#{proyectoBean.proyecto.fechaOut}"/>
+                    <p:outputLabel value="FECHA DE FIN"/>
+                    <p:inputText value="#{proyectoBean.proyecto.fechaOut}"/>
+                    
+                    <p:outputLabel value="USUARIO:"/>
+                    <p:inputText value="#{proyectoBean.proyecto.usuario}"/>
                 </h:panelGrid>
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fpro"
