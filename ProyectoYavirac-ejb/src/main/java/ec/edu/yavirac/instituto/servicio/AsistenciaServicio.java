@@ -22,7 +22,7 @@ import javax.ejb.Stateless;
 @Stateless
 @LocalBean
 public class AsistenciaServicio implements Iasistencia {
-
+  private static final long serialVersionUID = -5971913672287412493L;
     @Override
     public Boolean insert(Asistencia asistencia, HibernateUtil util) {
         Boolean exito = false;
