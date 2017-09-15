@@ -92,10 +92,6 @@ public class Fase  implements java.io.Serializable {
     public void setActividads(Set actividads) {
         this.actividads = actividads;
     }
-
-
-
-
 }
 
 
