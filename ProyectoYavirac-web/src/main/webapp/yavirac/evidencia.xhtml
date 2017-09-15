@@ -12,21 +12,30 @@
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="EVIDENCIA:"/>
                     <h:inputText value="#{evidenciaBean.evidencia.idEvidencia}"/>
-                    <h:outputText value="Actividad Evidencia:"/>
+                    
+                    <h:outputText value="Actividad :"/>
                     <h:inputText value="#{evidenciaBean.evidencia.actividad}"/>
-                    <h:outputLabel value="Usuario Evidencia"/>
+                    
+                    <h:outputLabel value="Usuario"/>
                     <p:inputText value="#{evidenciaBean.evidencia.usuario}"/>
+                    
                     <h:outputLabel value="PDF"/>
-                    <p:inputText value="#{evidenciaBean.evidencia.pdf}"/>
+                    <p:inputTextarea value="#{evidenciaBean.evidencia.pdf}" rows="5" cols="18"/>
+                    
                     <h:outputLabel value="Video"/>
-                    <p:inputText value="#{evidenciaBean.evidencia.video}"/>
+                    <p:inputTextarea value="#{evidenciaBean.evidencia.video}" rows="5" cols="18"/>
+                    
                     <h:outputLabel value="Foto"/>
-                    <p:inputText value="#{evidenciaBean.evidencia.foto}"/>
+                    <p:inputTextarea value="#{evidenciaBean.evidencia.foto}" rows="5" cols="18"/>
                  
                 </h:panelGrid>
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":evi"
                                      actionListener="#{evidenciaBean.add(evt)}"/>
+                    <p:commandButton value="MODIFICAR" update=":evi"
+                                     actionListener="#{evidenciaBean.modify(evt)}"/>
+                    <p:commandButton value="ELIMINAR" update=":evi"
+                                     actionListener="#{evidenciaBean.remove(evt)}"/>
                 </f:facet>
 
             </p:panel>
