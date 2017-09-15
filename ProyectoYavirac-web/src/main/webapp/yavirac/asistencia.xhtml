@@ -8,11 +8,9 @@
             <p:panel header="CONTROL DE ASISTENCIA">
                 <h:panelGrid columns="2" cellpadding="5">
                    <h:outputText value="USUARIO"/>
-                       <p:selectCheckboxMenu id="menu"  label="SELECCIONA..."
-                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
-                           <f:selectItems value="#{asistenciaBean.asistencia.usuario}" />
-                    </p:selectCheckboxMenu>
-
+                   <p:inputText value="#{asistenciaBean.asistencia.usuario}"/>
+                   <p:outputLabel value=" NUMERO ASISTENCIA:"/>
+                   <p:inputText value="#{asistenciaBean.asistencia.idAsistencia}"/>
                     <p:outputLabel value="FECHA:"/>
                     <p:inputText value="#{asistenciaBean.asistencia.fecha}"/>
                     <p:outputLabel value="PRESENTE:"/>
@@ -24,8 +22,7 @@
                     <p:commandButton value="MODIFICAR" update=":asi"
                                      actionListener="#{asistenciaBean.modify(evt)}"/>
                     <p:commandButton value="ELIMINAR" update=":asi"
-                                     actionListener="#{asistenciaBean.remove(evt)}"/>
-                    
+                                     actionListener="#{asistenciaBean.remove(evt)}"/> 
                 </f:facet>
             </p:panel>
         </h:form>
