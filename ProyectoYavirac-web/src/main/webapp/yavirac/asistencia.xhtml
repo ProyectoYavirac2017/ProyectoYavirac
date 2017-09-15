@@ -21,6 +21,11 @@
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":asi"
                                      actionListener="#{asistenciaBean.add(evt)}"/>
+                    <p:commandButton value="MODIFICAR" update=":asi"
+                                     actionListener="#{asistenciaBean.modify(evt)}"/>
+                    <p:commandButton value="ELIMINAR" update=":asi"
+                                     actionListener="#{asistenciaBean.remove(evt)}"/>
+                    
                 </f:facet>
             </p:panel>
         </h:form>
