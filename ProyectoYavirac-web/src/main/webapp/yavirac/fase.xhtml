@@ -1,45 +1,40 @@
-<!DOCTYPE html>
-<html xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 template="./template/template.xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
-
-    <h:head>
-        <title>REGISTRO DE FASE</title>
-    </h:head>
-    <h:body>
+    
+    
+    <ui:define name="content">
          <h:form id="fas">
-            <p:panel header="FASE">
+            <p:panel header="Fases">
                 <h:panelGrid columns="2" cellpadding="5">
                     
-                    <p:selectCheckboxMenu id="menu"  label="SELECCIONAR" filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
-                        <f:selectItem value="#{faseBean.fase.proyecto}" />
-                       
+                    <p:selectCheckboxMenu id="menu"  label="SELECCIONA..."
+                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
+                        <f:selectItems value="#{faseBean.fase.proyecto}" />
                     </p:selectCheckboxMenu>
-                            
+
                     <p:outputLabel value="NUMERO"/>
                     <p:inputText value="#{faseBean.fase.numero}"/>
-
-                    <p:outputLabel value="FECHA DE INICIO"/>
-                    <p:inputText value="#{faseBean.fase.fechaInit}"/>
+                    
+                    <h:outputText value="FECHA DE INICIO"/>
+                    <h:inputText value="#{faseBean.fase.fechaInit}"/>
 
                     <p:outputLabel value="OBJETIVOS"/>
-                   <p:inputText value="#{faseBean.fase.objetivo}"/>
-                   
-                    <p:outputLabel value="ESTADO"/>     
-                    <p:inputText value="#{faseBean.fase.estado}"/>
-                    
-                    <p:outputLabel value="USUARIO:"/>
-                    <p:inputText value="#{proyectoBean.proyecto.usuario}"/>
-                    
+                    <p:inputText value="#{faseBean.fase.objetivo}"/>
+
+                    <h:outputText value="ESTADO"/>
+                    <h:inputText value="#{faseBean.fase.estado}"/>
                 </h:panelGrid>
                 <f:facet name="footer">
-                    <p:commandButton value="GUARDAR" update=":fpro"
+                    <p:commandButton value="GUARDAR" update=":fas"
                                      actionListener="#{faseBean.add(evt)}"/>
                 </f:facet>
             </p:panel>
         </h:form>
+    </ui:define>
     
-</h:body>
-</html>
+</ui:composition>
