@@ -13,6 +13,9 @@
             <p:panel header="Nuevo Proyecto">
                 <h:panelGrid columns="2" cellpadding="5">
                             
+                    <p:outputLabel value="USUARIO:"/>
+                    <p:inputText value="#{proyectoBean.proyecto.usuario}"/>  
+                    
                     <p:outputLabel value="NOMBRE DEL PROYECTO:"/>
                     <p:inputText value="#{proyectoBean.proyecto.nombre}"/>
 
@@ -30,14 +33,7 @@
 
                     <p:outputLabel value="FECHA DE FIN"/>
                     <p:inputText value="#{proyectoBean.proyecto.fechaOut}"/>
-                    
-                    <p:outputLabel value="USUARIO:"/>
-                    <p:inputText value="#{proyectoBean.proyecto.usuario}"/>  
-                  
-                    <p:selectCheckboxMenu id="usuarios" value="#{usuarioBean.usuario.idUsuario}" label="Usuarios">
-                        <f:selectItem itemLabel="Seleccionar" itemValue=""/>
-                        <f:selectItems value=""/>
-                    </p:selectCheckboxMenu>
+
                 </h:panelGrid>
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fpro"
