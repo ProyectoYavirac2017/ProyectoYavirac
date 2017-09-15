@@ -10,8 +10,10 @@
         <h:form id="eva">
             <p:panel header="Control Evaluacion">
                 <h:panelGrid columns="2" cellpadding="5">
-                    <p:outputLabel value="Actividad:"/>
-                    <p:inputText value="#{evaluacionBean.evaluacion.actividad}"/>
+                    <h:outputText value="Actividad:"/>
+                    <p:selectOneMenu value="#{evaluacionBean.evaluacion.actividad}" style="width:140px">
+                        <f:selectItem itemLabel="Seleccione" itemValue=""/>
+                    </p:selectOneMenu>
                     <h:outputLabel value="Calificacion:"/>
                     <p:inputText value="#{evaluacionBean.evaluacion.calificaion}"/>                    
                 </h:panelGrid>
