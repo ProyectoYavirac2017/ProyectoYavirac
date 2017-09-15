@@ -20,10 +20,10 @@
         <property name="lugar" type="string">
             <column name="LUGAR" length="45" />
         </property>
-        <property name="fechaIn" type="date">
+        <property name="fechaIn" type="string"><!--CAMBIO DE DATE A STRING-->
             <column name="FECHA_IN" length="10" />
         </property>
-        <property name="fechaOut" type="date">
+        <property name="fechaOut" type="string"><!--CAMBIO DE DATE A STRING-->
             <column name="FECHA_OUT" length="10" />
         </property>
         <property name="flag" type="java.lang.Integer">
