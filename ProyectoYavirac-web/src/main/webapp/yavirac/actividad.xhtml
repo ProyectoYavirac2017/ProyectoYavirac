@@ -14,12 +14,11 @@
                         <f:selectItem itemLabel="Seleccione" itemValue=""/>
                     </p:selectOneMenu>
                     <h:outputText value="Fase:"/>
-                    <p:selectOneMenu  value="#{faseBean.fase.proyecto.fases}" style="width:140px">
+                    <p:selectOneMenu value="#{faseBean.fase.proyecto.fases}" style="width:140px">
                         <f:selectItem itemLabel="Seleccione" itemValue="" />
                     </p:selectOneMenu>
                     <h:outputLabel value="Fecha de Creación:"/>
-                    <p:calendar id="popup" value="#{calendarView.date2}"/>
-                    <f:selectItems value="#{actividadBean.actividad.fechaCreate}"/>
+                    <p:calendar id="popup" value="#{actividadBean.actividad.fechaCreate}"/>
                     <h:outputText value="Tarea:"/>
                     <h:inputTextarea value="#{actividadBean.actividad.tarea}" rows="5" cols="18"/>
                     <h:outputLabel value="Meta:"/>
@@ -30,11 +29,9 @@
                 <f:facet name="footer">
                     <p:commandButton id="dynaButton" value="Acciones" type="button" icon="ui-icon-extlink"/>
                     <p:menu overlay="true" trigger="dynaButton" my="left top" at="left bottom">
-                        <p:submenu label="Ajax">
-                            <p:menuitem value="GUARDAR" actionListener="#{actividadBean.add(evt)}" update="add" icon="ui-icon-disk"/>
-                            <p:menuitem value="ACTUALIZAR" actionListener="#{actividadBean.modify(evt)}" update="add" icon="ui-icon-arrowrefresh-1-w"/>
-                            <p:menuitem value="ELIMINAR" actionListener="#{actividadBean.remove(evt)}" update="add" ajax="false" icon="ui-icon-close"/>
-                        </p:submenu>
+                        <p:menuitem value="GUARDAR" actionListener="#{actividadBean.add(evt)}" update="add" icon="ui-icon-disk"/>
+                        <p:menuitem value="ACTUALIZAR" actionListener="#{actividadBean.modify(evt)}" update="add" icon="ui-icon-arrowrefresh-1-w"/>
+                        <p:menuitem value="ELIMINAR" actionListener="#{actividadBean.remove(evt)}" update="add" ajax="false" icon="ui-icon-close"/>
                     </p:menu>
                 </f:facet>
             </p:panel>
