@@ -31,6 +31,10 @@
                     
                     <p:outputLabel value="USUARIO:"/>
                     <p:inputText value="#{proyectoBean.proyecto.usuario}"/>
+                    <p:selectCheckboxMenu id="usuarios" value="#{usuarioBean.usuario.idUsuario}" label="Usuarios">
+                        <f:selectItem itemLabel="Seleccionar" itemValue=""/>
+                        <f:selectItems value=""/>
+                    </p:selectCheckboxMenu>
                 </h:panelGrid>
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fpro"
