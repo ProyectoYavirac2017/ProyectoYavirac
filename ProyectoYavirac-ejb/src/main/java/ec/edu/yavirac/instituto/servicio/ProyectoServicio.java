@@ -67,7 +67,7 @@ public class ProyectoServicio implements Iproyecto, Serializable  {
                     getSessionFactory().getCurrentSession());
 
             QueryParameter query_1 = new QueryParameter(QueryParameter.$TYPE_WHERE);
-            query_1.setColumnName("idproyecto");//idProyecto
+            query_1.setColumnName("idProyecto");//idProyecto
             query_1.setWhereClause("=");
             query_1.setValue(proyecto.getIdProyecto());
 
