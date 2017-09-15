@@ -9,7 +9,7 @@
     <ui:define name="content">
          <h:form id="fpro">
             <p:panel header="Nuevo Proyecto">
-                <h:panelGrid columns="2" cellpadding="5">
+                <h:panelGrid columns="3" cellpadding="5">
                             
                     <p:outputLabel value="NOMBRE DEL PROYECTO:"/>
                     <p:inputText value="#{proyectoBean.proyecto.nombre}"/>
@@ -24,7 +24,8 @@
                     <p:calendar pattern="dd/MM/yyyy" locale="pt" value="#{proyectoBean.date3}" showOn="button" />
                     <p:inputText value="#{proyectoBean.proyecto.fechaIn}"/>
 
-                    <p:outputLabel value="FECHA DE FIN"/>
+                    <p:outputLabel value="FECHA DE FIN"/>     
+                    <p:calendar pattern="dd/MM/yyyy" locale="pt" value="#{proyectoBean.date3}" showOn="button" />
                     <p:inputText value="#{proyectoBean.proyecto.fechaOut}"/>
                     
                     <p:outputLabel value="USUARIO:"/>
