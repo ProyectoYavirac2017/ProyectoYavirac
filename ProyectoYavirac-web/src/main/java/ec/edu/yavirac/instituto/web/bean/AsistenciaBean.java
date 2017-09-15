@@ -23,7 +23,7 @@ import javax.inject.Named;
 @ViewScoped
 public class AsistenciaBean implements Imethods, Serializable {
 
-    private static final long serialVersionUID = -2033941921967400870L;
+    //private static final long serialVersionUID = -2033941921967400870L;
 
     private Asistencia asistencia;
     @Inject
@@ -37,7 +37,7 @@ public class AsistenciaBean implements Imethods, Serializable {
     @Override
     public void add(ActionEvent evt) {
         if (this.asistencia != null) {
-           Boolean exito = this.asistenciaControl.insert(asistencia);
+           Boolean exito = this.asistenciaControl.insert(this.asistencia);
            if(exito){
                this.init();
            }
@@ -46,7 +46,12 @@ public class AsistenciaBean implements Imethods, Serializable {
 
     @Override
     public void modify(ActionEvent evt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (this.asistencia!= asistencia) {
+            Boolean exito= this.asistenciaControl.update(asistencia);
+            if (exito) {
+                this.init();
+            }
+        }
     }
 
     @Override
