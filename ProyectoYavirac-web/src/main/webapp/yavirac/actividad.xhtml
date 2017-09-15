@@ -6,7 +6,7 @@
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
     <ui:define name="content">
-        <h:form id="fact">
+        <h:form id="act" id="elim" id="add">
             <p:panel header="Nueva Actividad">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="Proyecto:"/>
@@ -35,8 +35,14 @@
                 </h:panelGrid>
                 
                 <f:facet name="footer">
-                    <p:commandButton value="GUARDAR" update=":fact"
-                                     actionListener="#{actividadBean.add(evt)}"/>
+                    <p:commandButton id="dynaButton" value="Show" type="button" icon="ui-icon-extlink"/>
+                    <p:menu overlay="true" trigger="dynaButton" my="left top" at="left bottom">
+                        <p:submenu label="Ajax">
+                            <p:menuitem value="GUARDAR" actionListener="#{actividadBean.add(evt)}" update="add" icon="ui-icon-disk"/>
+                            <p:menuitem value="ACTUALIZAR" actionListener="#{actividadBean.modify(evt)}" update="act" icon="ui-icon-arrowrefresh-1-w"/>
+                            <p:menuitem value="ELIMINAR" actionListener="#{actividadBean.remove(evt)}" update="elim" ajax="false" icon="ui-icon-close"/>
+                        </p:submenu>
+                    </p:menu>
                 </f:facet>
             </p:panel>
         </h:form>
