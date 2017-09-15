@@ -12,10 +12,10 @@
             <p:panel header="FASES">
                 <h:panelGrid columns="2" cellpadding="5">
                     
-                    <p:selectCheckboxMenu id="menu"  label="SELECCIONAR"
+                    <hr><p:selectCheckboxMenu id="menu"  label="SELECCIONAR"
                               filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
                         <f:selectItems value="#{faseBean.fase.proyecto}" />
-                    </p:selectCheckboxMenu>
+                         </p:selectCheckboxMenu></hr>
                     
                     <p:outputLabel value="NUMERO"/>
                     <p:inputText value="#{faseBean.fase.numero}"/>
