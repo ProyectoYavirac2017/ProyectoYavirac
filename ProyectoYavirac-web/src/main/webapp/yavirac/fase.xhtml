@@ -33,6 +33,12 @@
                 <f:facet name="footer">
                     <p:commandButton value="GUARDAR" update=":fas"
                                      actionListener="#{faseBean.add(evt)}"/>
+                    
+                    <p:commandButton value="MODIFICAR" update=":fas"
+                                     actionListener="#{faseBean.modify(evt)}"/>
+                    
+                    <p:commandButton value="ELIMINAR" update=":fas"
+                                     actionListener="#{faseBean.remove(evt)}"/>
                 </f:facet>
             </p:panel>
         </h:form>
