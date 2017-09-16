@@ -46,7 +46,12 @@ public class FaseBean implements Imethods, Serializable{
 
     @Override
     public void modify(ActionEvent evt) {
-        
+        if (this.fase!= fase) {
+            Boolean exito= this.faseControl.update(fase);
+            if (exito) {
+                this.init();
+            }
+        }
     }
 
     @Override
